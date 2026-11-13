@@ -1,0 +1,1 @@
+.coming-page{min-height:75vh;display:grid;place-items:center;text-align:center;padding:70px 0}.coming-card{max-width:720px;background:var(--surface);padding:clamp(30px,7vw,75px);border-radius:30px}.coming-card h1{font-size:clamp(3rem,7vw,6rem)}.coming-card p{max-width:530px;margin:0 auto 25px}

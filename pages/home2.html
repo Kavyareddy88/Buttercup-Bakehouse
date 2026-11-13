@@ -1,0 +1,1988 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buttercup Bakehouse | The Premium Edit</title>
+
+    <meta
+        name="description"
+        content="Discover the premium collection at Buttercup Bakehouse: artisan patisserie, signature cakes and carefully crafted breads."
+    >
+
+    <meta name="theme-color" content="#493226">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/home2.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    <link rel="stylesheet" href="../assets/css/buttercup-premium.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="../assets/images/logo/logoo.jpg">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("premiumProducts").innerHTML =
+                products.slice(0, 3).map(productCard).join("");
+
+            document.getElementById("homeArticles").innerHTML =
+                articles.slice(0, 3).map(articleCard).join("");
+        });
+    </script>
+
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/home.js" defer></script>
+</head>
+
+
+
+    <!-- HEADER -->
+    <body id="top" data-active="home">
+  <header class="site-header">
+  <div class="container header-inner">
+
+    <a class="brand" href="index.html" aria-label="Buttercup Bakehouse home">
+      <img class="brand-logo"
+           src="../assets/images/logo/logoo.jpg"
+           alt="">
+
+      <span class="brand-name">
+        Buttercup
+        <small>BAKEHOUSE</small>
+      </span>
+    </a>
+
+    <button class="icon-btn menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+
+      <div class="home-dropdown">
+  <button
+    class="home-dropdown-trigger active"
+    id="homeDropdownToggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="homeDropdownMenu"
+  >
+    <span>Home</span>
+  <span class="home-dropdown-arrow" aria-hidden="true">
+  <svg viewBox="0 0 16 16" width="13" height="13">
+    <path d="M3.5 5.5 8 10l4.5-4.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+</span>
+  </button>
+
+  <div class="home-dropdown-menu" id="homeDropdownMenu">
+    <a href="index.html">Home – Classic</a>
+    <a href="home2.html">Home – Premium</a>
+  </div>
+</div>
+
+      <a data-nav="about" href="about.html">About</a>
+      <a data-nav="products" href="products.html">Products</a>
+      <a data-nav="custom" href="custom-orders.html">Custom Cakes</a>
+      <a data-nav="blog" href="blog.html">Blog</a>
+      <a data-nav="contact" href="contact.html">Contact</a>
+
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="direction-toggle"
+              id="rtlToggle"
+              type="button"
+              aria-label="Switch text direction">
+        RTL
+      </button>
+
+      <button class="icon-btn theme-toggle"
+              id="themeToggle"
+              type="button"
+              aria-label="Toggle dark mode"
+              title="Toggle dark mode">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+
+      <a class="header-order" href="contact.html#contact-form">
+        Order a Cake <svg
+    class="about-btn-arrow"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="17"
+    height="17"
+    fill="none"
+    aria-hidden="true"
+  >
+    <path
+      d="M7 17L17 7M8 7H17V16"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+      </a>
+
+    </div>
+  </div>
+</header>
+    <!-- MAIN CONTENT -->
+    <main>
+      
+<!-- =====================================
+     PREMIUM HOME 2 HERO
+===================================== -->
+
+<section class="h2-hero" id="home">
+
+    <!-- Background image -->
+    <div class="h2-hero-background"></div>
+
+    <!-- Background overlay -->
+    <div class="h2-hero-overlay"></div>
+
+    <div class="h2-hero-container">
+
+        <!-- HERO CONTENT -->
+        <div class="h2-hero-content">
+
+            <span class="h2-hero-kicker">
+                <span class="h2-kicker-line"></span>
+              
+                <span class="h2-about-eyebrow-line"></span>
+            </span>
+
+            <h1 class="h2-hero-title">
+                Bake something
+                <span>beautiful.</span>
+                Share a little joy.
+            </h1>
+
+            <p class="h2-hero-description">
+                Thoughtfully made cakes, fresh artisan breads and
+                delicate pastries. Beautiful little creations,
+                baked fresh and made to bring people together.
+            </p>
+
+            <!-- HERO BUTTONS -->
+            <div class="h2-hero-actions">
+
+                <!-- Primary button -->
+                <a href="products.html" class="h2-hero-primary">
+                    Explore Our Bakes
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 17L17 7M8 7H17V16"/>
+                    </svg>
+                </a>
+
+                <!-- Secondary outline link -->
+                <a href="custom-orders.html#cakeOrderForm" class="h2-hero-secondary">
+    Create Your Cake
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7 17L17 7M8 7H17V16"/>
+    </svg>
+</a>
+
+            </div>
+
+            <!-- Supporting text -->
+            <div class="h2-hero-signature">
+                <span class="h2-signature-line"></span>
+                Freshly baked. Happily shared.
+            </div>
+
+        </div>
+
+        
+<!-- ANIMATED BAKING ILLUSTRATION -->
+<div class="h2-baking-animation">
+
+    <div class="h2-baking-label">
+        A LITTLE LOVE
+        <span>IN EVERY BAKE</span>
+    </div>
+
+    <svg
+        class="h2-baking-svg"
+        viewBox="0 0 220 190"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="Animated whisk mixing cake batter in a bowl"
+    >
+
+        <!-- Floating flour particles -->
+        <g class="h2-flour-particles">
+            <circle cx="38" cy="45" r="2"/>
+            <circle cx="178" cy="37" r="2.5"/>
+            <circle cx="190" cy="92" r="1.8"/>
+            <circle cx="30" cy="105" r="1.5"/>
+            <circle cx="153" cy="18" r="1.8"/>
+        </g>
+
+        <!-- Batter splash -->
+        <path
+            class="h2-batter-splash"
+            d="M68 103 Q45 85 53 70 Q61 62 65 83
+               Q72 94 81 88 Q91 80 96 95"
+        />
+
+        <!-- Whisk handle -->
+        <g class="h2-whisk">
+            <path
+                d="M139 26 L112 91"
+                stroke="#493226"
+                stroke-width="7"
+                stroke-linecap="round"
+            />
+
+            <path
+                d="M139 26 L112 91"
+                stroke="#C96F50"
+                stroke-width="3"
+                stroke-linecap="round"
+            />
+
+            <!-- Whisk wires -->
+            <path
+                d="M112 88
+                   C91 93 91 120 109 125
+                   C128 128 139 105 112 88
+                   M112 88
+                   C99 103 102 119 109 125
+                   M112 88
+                   C122 103 120 118 109 125
+                   M112 88
+                   C132 98 128 117 109 125"
+                fill="none"
+                stroke="#493226"
+                stroke-width="2"
+                stroke-linecap="round"
+            />
+        </g>
+
+        <!-- Mixing bowl -->
+        <path
+            d="M48 104
+               Q110 122 172 104
+               L158 155
+               Q110 177 62 155 Z"
+            fill="#EADBD0"
+            stroke="#A6533D"
+            stroke-width="2"
+        />
+
+        <!-- Bowl rim -->
+        <path
+            d="M45 103 Q110 121 175 103"
+            fill="none"
+            stroke="#C96F50"
+            stroke-width="5"
+            stroke-linecap="round"
+        />
+
+        <!-- Batter -->
+        <path
+            class="h2-batter"
+            d="M65 108 Q110 122 155 108
+               Q133 143 110 140
+               Q85 140 65 108Z"
+            fill="#C96F50"
+        />
+
+        <!-- Batter swirl -->
+        <path
+            class="h2-batter-swirl"
+            d="M86 119 Q108 133 132 116"
+            fill="none"
+            stroke="#FFF8F0"
+            stroke-width="3"
+            stroke-linecap="round"
+        />
+
+        <!-- Bowl base -->
+        <path
+            d="M91 160 Q110 168 129 160"
+            fill="none"
+            stroke="#A6533D"
+            stroke-width="3"
+            stroke-linecap="round"
+        />
+
+    </svg>
+
+    <span class="h2-baking-caption">
+        MADE FRESH, MADE WITH CARE
+    </span>
+
+</div>
+
+
+        
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     BUTTERCUP BAKEHOUSE — PREMIUM ABOUT
+===================================== -->
+
+<section class="h2-about" id="about">
+
+    <div class="h2-about-container">
+
+        <!-- TOP INTRODUCTION -->
+        <div class="h2-about-top">
+
+            <span class="h2-about-eyebrow">
+                <span class="h2-about-eyebrow-line"></span>
+                OUR STORY
+                <span class="h2-about-eyebrow-line"></span>
+            </span>
+
+            <h2>
+                A little warmth.
+                <span>A whole lot of heart.</span>
+            </h2>
+
+            <p>
+                At Buttercup Bakehouse, we believe the sweetest things
+                are made with patience, passion and a little imagination.
+            </p>
+
+        </div>
+
+
+        <!-- MAIN ABOUT CONTENT -->
+        <div class="h2-about-grid">
+
+            <!-- LEFT SIDE: CONTENT -->
+            <div class="h2-about-content">
+
+               
+                <h3>
+                    Where everyday
+                    <em>moments turn sweeter.</em>
+                </h3>
+
+                <p class="h2-about-lead">
+                    Welcome to Buttercup Bakehouse, your neighbourhood
+                    spot for freshly baked breads, beautiful pastries
+                    and cakes made for life's sweetest moments.
+                </p>
+
+                <p>
+                    We believe the best moments often come with
+                    something delicious. From your morning loaf to
+                    an afternoon pastry, we make everyday treats
+                    feel a little more special.
+                </p>
+
+                <p>
+                    Every creation is thoughtfully prepared, bringing
+                    together beautiful flavours and the simple joy
+                    of sharing something delicious.
+                </p>
+
+
+                <!-- BRAND HIGHLIGHTS -->
+                <div class="h2-about-values">
+
+                    <div class="h2-about-value">
+
+                        <span class="h2-about-value-number">01</span>
+
+                        <div>
+                            <h4>Freshly Baked</h4>
+                            <p>
+                                Made fresh for your everyday moments.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="h2-about-value">
+
+                        <span class="h2-about-value-number">02</span>
+
+                        <div>
+                            <h4>Thoughtfully Made</h4>
+                            <p>
+                                Carefully prepared with attention to detail.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="h2-about-value">
+
+                        <span class="h2-about-value-number">03</span>
+
+                        <div>
+                            <h4>Made to Celebrate</h4>
+                            <p>
+                                Beautiful cakes for life's special occasions.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRIMARY BUTTON -->
+                <a href="products.html" class="h2-about-button">
+
+                    <span>Discover Our Bakes</span>
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="17"
+                        height="17"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M7 17L17 7M8 7H17V16"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+            <!-- RIGHT SIDE: IMAGE -->
+            <div class="h2-about-visual">
+
+                <div class="h2-about-image">
+
+                    <img
+                        src="../assets/images/logo/all.jpg"
+                        alt="Fresh artisan bread prepared at a bakery"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <!-- FLOATING IMAGE LABEL -->
+                <div class="h2-about-image-tag">
+
+                    <span class="h2-about-tag-small">
+                        THE ART OF
+                    </span>
+
+                    <span class="h2-about-tag-large">
+                        Good Baking
+                    </span>
+
+                </div>
+
+
+                <div class="h2-about-image-caption">
+                    FRESHLY MADE. THOUGHTFULLY SHARED.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             ABOUT STATISTICS
+        ====================================== -->
+
+        <div class="h2-about-stats" data-about-stats>
+
+            <!-- STATISTICS INTRO -->
+            <div class="h2-about-stat-heading">
+
+                <span>THE BUTTERCUP DIFFERENCE</span>
+
+                <h3>
+                    A little more to
+                    <br>
+                    love about us.
+                </h3>
+
+            </div>
+
+
+            <!-- STAT 1 -->
+            <div class="h2-about-stat">
+
+                <strong
+                    class="h2-about-counter"
+                    data-count="3"
+                    data-suffix="+"
+                >0</strong>
+
+                <span>Everyday Bake Categories</span>
+
+                <p>
+                    Breads, pastries and cakes.
+                </p>
+
+            </div>
+
+
+            <!-- STAT 2 -->
+            <div class="h2-about-stat">
+
+                <strong
+                    class="h2-about-counter"
+                    data-count="1"
+                >0</strong>
+
+                <span>Neighbourhood Bakehouse</span>
+
+                <p>
+                    One little place, lots of sweetness.
+                </p>
+
+            </div>
+
+
+            <!-- STAT 3 -->
+            <div class="h2-about-stat">
+
+                <strong
+                    class="h2-about-counter"
+                    data-count="100"
+                    data-suffix="%"
+                >0%</strong>
+
+                <span>Made with Care</span>
+
+                <p>
+                    Thought in every little detail.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     HOME 2 — THE BUTTERCUP WAY
+     PREMIUM PROCESS + VERTICAL TIMELINE
+========================================= -->
+
+<section class="h2-process" id="our-process">
+
+    <div class="h2-process-container">
+
+        <!-- SECTION INTRO -->
+        <div class="h2-process-heading">
+
+            <span class="h2-process-eyebrow">
+                <span></span>
+                THE BUTTERCUP WAY
+                <span></span>
+            </span>
+
+            <h2>
+                From the farm
+                <em>to your table.</em>
+            </h2>
+
+            <p>
+                Every beautiful bake begins with thoughtful choices.
+                From carefully selected ingredients to the final touch
+                from our oven, we put care into every little detail.
+            </p>
+
+        </div>
+
+
+        <!-- FOUR PROCESS IMAGES -->
+        <div class="h2-process-gallery">
+
+            <div class="h2-process-gallery-item">
+                <div class="h2-process-image-wrap">
+                    <img
+                        src="../assets/images/logo/grow.jpg"
+                        alt="Golden wheat fields"
+                        loading="lazy">
+
+                    <span class="h2-process-image-number">01</span>
+                    <span class="h2-process-image-caption">THE ORIGIN</span>
+                </div>
+            </div>
+
+            <div class="h2-process-gallery-item">
+                <div class="h2-process-image-wrap">
+                    <img
+                        src="../assets/images/logo/maida.jpg"
+                        alt="Flour and baking ingredients"
+                        loading="lazy">
+
+                    <span class="h2-process-image-number">02</span>
+                    <span class="h2-process-image-caption">THE INGREDIENTS</span>
+                </div>
+            </div>
+
+            <div class="h2-process-gallery-item">
+                <div class="h2-process-image-wrap">
+                    <img
+                        src="../assets/images/logo/whisking.jpg"
+                        alt="Preparing ingredients by hand"
+                        loading="lazy">
+
+                    <span class="h2-process-image-number">03</span>
+                    <span class="h2-process-image-caption">THE CRAFT</span>
+                </div>
+            </div>
+
+            <div class="h2-process-gallery-item">
+                <div class="h2-process-image-wrap">
+                    <img
+                        src="../assets/images/logo/bread.jpg"
+                        alt="Freshly baked artisan bread"
+                        loading="lazy">
+
+                    <span class="h2-process-image-number">04</span>
+                    <span class="h2-process-image-caption">THE FINISH</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- TIMELINE INTRO -->
+        <div class="h2-process-heading">
+
+            <span class="h2-process-eyebrow">
+                <span></span>
+                A LITTLE CARE IN EVERY STEP
+                <span></span>
+            </span>
+
+            <h3>
+                How the magic
+                <em>comes together.</em>
+            </h3>
+
+            <p>
+                Good baking is never rushed. Here's how we bring
+                each creation to life, one thoughtful step at a time.
+            </p>
+
+        </div>
+
+
+        <!-- VERTICAL TIMELINE -->
+        <div class="h2-process-timeline">
+
+
+            <!-- STEP 01 -->
+            <article class="h2-process-step">
+
+                <div class="h2-process-step-content">
+
+                    <span class="h2-process-step-label">STEP ONE</span>
+
+                    <h4>Grown with Care</h4>
+
+                    <p>
+                        It all begins with quality grains and carefully
+                        sourced flour. We value good ingredients and
+                        the people behind them.
+                    </p>
+
+                    <span class="h2-process-step-note">
+                        Thoughtful choices from the very beginning.
+                    </span>
+
+                </div>
+
+                <div class="h2-process-step-marker">
+                    <span>01</span>
+                </div>
+
+                <div class="h2-process-step-side">
+                    <span class="h2-process-side-title">THE ORIGIN</span>
+                    <span class="h2-process-side-line"></span>
+                </div>
+
+            </article>
+
+
+            <!-- STEP 02 -->
+            <article class="h2-process-step">
+
+                <div class="h2-process-step-content">
+
+                    <span class="h2-process-step-label">STEP TWO</span>
+
+                    <h4>Simple Ingredients</h4>
+
+                    <p>
+                        Each ingredient is selected with care.
+                        We bring together the essentials that give
+                        our breads, pastries and cakes their character.
+                    </p>
+
+                    <span class="h2-process-step-note">
+                        Quality ingredients make all the difference.
+                    </span>
+
+                </div>
+
+                <div class="h2-process-step-marker">
+                    <span>02</span>
+                </div>
+
+                <div class="h2-process-step-side">
+                    <span class="h2-process-side-title">THE INGREDIENTS</span>
+                    <span class="h2-process-side-line"></span>
+                </div>
+
+            </article>
+
+
+            <!-- STEP 03 -->
+            <article class="h2-process-step">
+
+                <div class="h2-process-step-content">
+
+                    <span class="h2-process-step-label">STEP THREE</span>
+
+                    <h4>Made by Hand</h4>
+
+                    <p>
+                        Mixing, kneading, shaping and decorating
+                        take patience. Every creation receives
+                        attention through each part of the process.
+                    </p>
+
+                    <span class="h2-process-step-note">
+                        A little patience. A lot of craftsmanship.
+                    </span>
+
+                </div>
+
+                <div class="h2-process-step-marker">
+                    <span>03</span>
+                </div>
+
+                <div class="h2-process-step-side">
+                    <span class="h2-process-side-title">THE CRAFT</span>
+                    <span class="h2-process-side-line"></span>
+                </div>
+
+            </article>
+
+
+            <!-- STEP 04 -->
+            <article class="h2-process-step">
+
+                <div class="h2-process-step-content">
+
+                    <span class="h2-process-step-label">STEP FOUR</span>
+
+                    <h4>Fresh from Our Oven</h4>
+
+                    <p>
+                        The final touch is a fresh bake, ready to be
+                        enjoyed and shared. From everyday treats
+                        to special celebrations, every moment deserves
+                        something lovely.
+                    </p>
+
+                    <span class="h2-process-step-note">
+                        Freshly made. Ready to be shared.
+                    </span>
+
+                </div>
+
+                <div class="h2-process-step-marker">
+                    <span>04</span>
+                </div>
+
+                <div class="h2-process-step-side">
+                    <span class="h2-process-side-title">THE FINISH</span>
+                    <span class="h2-process-side-line"></span>
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- CLOSING SIGNATURE -->
+        <div class="h2-process-footer">
+
+            <span class="h2-process-footer-line"></span>
+
+            <p>
+                Made thoughtfully.
+                <strong>Shared happily.</strong>
+            </p>
+
+            <span class="h2-process-footer-line"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SHOP BY CATEGORY
+========================================= -->
+
+<section class="h2-category-section" id="categories">
+
+    <div class="h2-category-container">
+
+        <!-- SECTION HEADING -->
+        <div class="h2-about-top">
+
+            <span class="h2-about-eyebrow">
+                <span class="h2-about-eyebrow-line"></span>
+                FRESH FROM OUR BAKEHOUSE
+                <span class="h2-about-eyebrow-line"></span>
+            </span>
+
+            <h2>
+                Explore Our <span>Categories</span>
+            </h2>
+
+            <p>
+                From freshly baked breads to beautiful celebration cakes,
+                discover something special for every moment.
+            </p>
+
+        </div>
+
+
+        <!-- CATEGORY GRID -->
+        <div class="h2-category-grid">
+
+
+            <!-- CATEGORY 01 : CAKES -->
+            <article class="h2-category-card">
+
+                <a href="products.html#cakes"
+                   class="h2-category-image-link"
+                   aria-label="Explore cakes">
+
+                    <div class="h2-category-image">
+
+                        <img
+                            src="../assets/images/logo/fresh.jpg"
+                            alt="Freshly decorated celebration cake"
+                            loading="lazy"
+                        >
+
+                        <span class="h2-category-number">01</span>
+
+                        <span class="h2-category-image-line"></span>
+
+                    </div>
+
+                </a>
+
+                <a href="products.html#cakes" class="h2-category-tag">
+                    FRESH EVERY DAY
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                </a>
+
+            </article>
+
+
+            <!-- CATEGORY 02 : BREADS -->
+            <article class="h2-category-card">
+
+                <a href="products.html#breads"
+                   class="h2-category-image-link"
+                   aria-label="Explore fresh breads">
+
+                    <div class="h2-category-image">
+
+                        <img
+                            src="../assets/images/logo/baked.jpg"
+                            alt="Freshly baked artisan bread"
+                            loading="lazy"
+                        >
+
+                        <span class="h2-category-number">02</span>
+
+                        <span class="h2-category-image-line"></span>
+
+                    </div>
+
+                </a>
+
+                <a href="products.html#breads" class="h2-category-tag">
+                    BAKED WITH CARE
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                </a>
+
+            </article>
+
+
+            <!-- CATEGORY 03 : PASTRIES -->
+            <article class="h2-category-card">
+
+                <a href="products.html#pastries"
+                   class="h2-category-image-link"
+                   aria-label="Explore pastries">
+
+                    <div class="h2-category-image">
+
+                        <img
+                            src="../assets/images/logo/img3.jpg"
+                            alt="Freshly prepared pastries"
+                            loading="lazy"
+                        >
+
+                        <span class="h2-category-number">03</span>
+
+                        <span class="h2-category-image-line"></span>
+
+                    </div>
+
+                </a>
+
+                <a href="products.html#pastries" class="h2-category-tag">
+                    MADE FOR YOUR MOMENTS
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                </a>
+
+            </article>
+
+
+            <!-- CATEGORY 04 : CUPCAKES -->
+            <article class="h2-category-card">
+
+                <a href="products.html#cupcakes"
+                   class="h2-category-image-link"
+                   aria-label="Explore cupcakes">
+
+                    <div class="h2-category-image">
+
+                        <img
+                            src="../assets/images/logo/img4.jpg"
+                            alt="Beautifully decorated cupcakes"
+                            loading="lazy"
+                        >
+
+                        <span class="h2-category-number">04</span>
+
+                        <span class="h2-category-image-line"></span>
+
+                    </div>
+
+                </a>
+
+                <a href="products.html#cupcakes" class="h2-category-tag">
+                    LITTLE BITES OF JOY
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                </a>
+
+            </article>
+
+
+            <!-- CATEGORY 05 : COOKIES -->
+            <article class="h2-category-card">
+
+                <a href="products.html#cookies"
+                   class="h2-category-image-link"
+                   aria-label="Explore cookies">
+
+                    <div class="h2-category-image">
+
+                        <img
+                            src="../assets/images/logo/img5.jpg"
+                            alt="Freshly baked cookies"
+                            loading="lazy"
+                        >
+
+                        <span class="h2-category-number">05</span>
+
+                        <span class="h2-category-image-line"></span>
+
+                    </div>
+
+                </a>
+
+                <a href="products.html#cookies" class="h2-category-tag">
+                    FRESHLY MADE
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                </a>
+
+            </article>
+
+
+            <!-- CATEGORY 06 : DESSERTS -->
+            <article class="h2-category-card">
+
+                <a href="products.html#desserts"
+                   class="h2-category-image-link"
+                   aria-label="Explore desserts">
+
+                    <div class="h2-category-image">
+
+                        <img
+                            src="../assets/images/logo/img6.jpg"
+                            alt="Delicious bakery desserts"
+                            loading="lazy"
+                        >
+
+                        <span class="h2-category-number">06</span>
+
+                        <span class="h2-category-image-line"></span>
+
+                    </div>
+
+                </a>
+
+                <a href="products.html#desserts" class="h2-category-tag">
+                    MADE WITH LOVE
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                </a>
+
+            </article>
+
+
+            <!-- CATEGORY 07 : CELEBRATION CAKES -->
+            <article class="h2-category-card">
+
+                <a href="products.html#celebration-cakes"
+                   class="h2-category-image-link"
+                   aria-label="Explore celebration cakes">
+
+                    <div class="h2-category-image">
+
+                        <img
+                            src="../assets/images/logo/img7.jpg"
+                            alt="Special occasion celebration cake"
+                            loading="lazy"
+                        >
+
+                        <span class="h2-category-number">07</span>
+
+                        <span class="h2-category-image-line"></span>
+
+                    </div>
+
+                </a>
+
+                <a href="products.html#celebration-cakes" class="h2-category-tag">
+                    MADE TO CELEBRATE
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                </a>
+
+            </article>
+
+
+            <!-- CATEGORY 08 : SPECIAL TREATS -->
+            <article class="h2-category-card">
+
+                <a href="products.html#special-treats"
+                   class="h2-category-image-link"
+                   aria-label="Explore special treats">
+
+                    <div class="h2-category-image">
+
+                        <img
+                            src="../assets/images/logo/img8.jpg"
+                            alt="Special bakery treats"
+                            loading="lazy"
+                        >
+
+                        <span class="h2-category-number">08</span>
+
+                        <span class="h2-category-image-line"></span>
+
+                    </div>
+
+                </a>
+
+                <a href="products.html#special-treats" class="h2-category-tag">
+                    SOMETHING SPECIAL
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                </a>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- BOTTOM HIGHLIGHTS -->
+        <div class="h2-category-highlights">
+
+            <div class="h2-category-highlight">
+
+                 <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 11c0-3.5 3.5-6 8-6s8 2.5 8 6v7H4v-7z"/>
+        <path d="M8 10l1-2M12 9l1-2M16 10l1-2"/>
+        <path d="M4 14h16"/>
+    </svg>
+
+                <span>Freshly Baked</span>
+
+            </div>
+
+
+            <div class="h2-category-highlight">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+
+                <span>Made with Care</span>
+
+            </div>
+
+
+            <div class="h2-category-highlight">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 12h16M12 4v16"/>
+                    <path d="M7 7l10 10M17 7L7 17"/>
+                </svg>
+
+                <span>Made for Every Occasion</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     BUTTERCUP — CUSTOM CAKE EXPERIENCE
+========================================= -->
+
+<section class="h2-custom-experience" id="custom-cakes">
+
+    <div class="h2-custom-container">
+
+        <!-- INTRODUCTION -->
+        <div class="h2-custom-heading">
+            <span class="h2-custom-eyebrow">MADE FOR YOUR MOMENTS</span>
+
+            <h2>
+                A cake as special as
+                <em>the occasion.</em>
+            </h2>
+
+            <p>
+                Some moments deserve more than an ordinary cake.
+                Let us create something beautiful, personal and
+                wonderfully delicious for your celebration.
+            </p>
+        </div>
+
+
+        <!-- MAIN FEATURE -->
+        <div class="h2-custom-feature">
+
+            <!-- IMAGE -->
+            <div class="h2-custom-visual">
+
+                <img
+                    src="../assets/images/logo/cakehm2.jpg"
+                    alt="Beautiful handcrafted custom celebration cake"
+                    loading="lazy"
+                >
+
+                <div class="h2-custom-image-shade"></div>
+
+                <div class="h2-custom-image-label">
+                    <span>THE BUTTERCUP TOUCH</span>
+                    <strong>Made just for you.</strong>
+                </div>
+
+                <span class="h2-custom-image-index">01 / CUSTOM CREATIONS</span>
+
+            </div>
+
+
+            <!-- CONTENT -->
+            <div class="h2-custom-copy">
+
+                <span class="h2-custom-small-label">
+                    SOMETHING EXTRA SPECIAL
+                </span>
+
+                <h3>
+                    Your ideas,
+                    <em>our little magic.</em>
+                </h3>
+
+                <p>
+                    From delicate buttercream details to beautiful
+                    celebration designs, every custom cake begins
+                    with your idea. Choose your favourite flavours,
+                    share your inspiration and let us bring your
+                    celebration to life.
+                </p>
+
+                <div class="h2-custom-details">
+
+                    <div class="h2-custom-detail">
+                        <span class="h2-custom-detail-line"></span>
+                        <div>
+                            <strong>Made to order</strong>
+                            <p>Created especially for your celebration.</p>
+                        </div>
+                    </div>
+
+                    <div class="h2-custom-detail">
+                        <span class="h2-custom-detail-line"></span>
+                        <div>
+                            <strong>Your choice of flavours</strong>
+                            <p>Choose the combinations you love.</p>
+                        </div>
+                    </div>
+
+                    <div class="h2-custom-detail">
+                        <span class="h2-custom-detail-line"></span>
+                        <div>
+                            <strong>Thoughtful finishing</strong>
+                            <p>Personal details in every little touch.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="custom-orders.html#cakeOrderForm" class="h2-custom-button">
+                    <span>Order a Custom Cake</span>
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 17L17 7M8 7H17V16"/>
+                    </svg>
+                </a>
+
+                <span class="h2-custom-note">
+                    Thoughtfully made. Happily celebrated.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- OCCASIONS -->
+        <div class="h2-custom-occasions">
+
+            <div class="h2-custom-occasion-heading">
+                <span class="h2-custom-small-label">A REASON TO CELEBRATE</span>
+
+                <h3>
+                    Made for every
+                    <em>kind of happy.</em>
+                </h3>
+            </div>
+
+
+            <div class="h2-custom-occasion-grid">
+
+                <!-- BIRTHDAYS -->
+                <article class="h2-custom-occasion-card">
+
+                    <span class="h2-custom-occasion-number">01</span>
+
+                    <div class="h2-custom-occasion-icon">
+                        <svg viewBox="0 0 40 40" aria-hidden="true">
+                            <path d="M8 23h24v11H8z"/>
+                            <path d="M6 23h28M12 23v-5a3 3 0 0 1 6 0v5m4 0v-5a3 3 0 0 1 6 0v5"/>
+                            <path d="M20 8v6m-3-3h6"/>
+                        </svg>
+                    </div>
+
+                    <h4>Birthdays</h4>
+
+                    <p>
+                        Make their special day even sweeter with
+                        a cake made just for them.
+                    </p>
+
+                    <a href="custom-orders.html#cakeOrderForm" class="h2-custom-occasion-link">
+                        Celebrate a birthday
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7 17L17 7M8 7H17V16"/>
+                        </svg>
+                    </a>
+
+                </article>
+
+
+                <!-- ANNIVERSARIES -->
+                <article class="h2-custom-occasion-card">
+
+                    <span class="h2-custom-occasion-number">02</span>
+
+                    <div class="h2-custom-occasion-icon">
+                        <svg viewBox="0 0 40 40" aria-hidden="true">
+                            <path d="M20 32S6 24 6 14a7 7 0 0 1 14-1 7 7 0 0 1 14 1c0 10-14 18-14 18z"/>
+                            <path d="M12 19h5l3-5 4 10 3-5h3"/>
+                        </svg>
+                    </div>
+
+                    <h4>Anniversaries</h4>
+
+                    <p>
+                        Celebrate another beautiful chapter with
+                        something thoughtful and memorable.
+                    </p>
+
+                    <a href="custom-orders.html#cakeOrderForm" class="h2-custom-occasion-link">
+                        Celebrate together
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7 17L17 7M8 7H17V16"/>
+                        </svg>
+                    </a>
+
+                </article>
+
+
+                <!-- SPECIAL MOMENTS -->
+                <article class="h2-custom-occasion-card">
+
+                    <span class="h2-custom-occasion-number">03</span>
+
+                    <div class="h2-custom-occasion-icon">
+                        <svg viewBox="0 0 40 40" aria-hidden="true">
+                            <path d="M20 5l3.8 9.2L34 18l-10.2 3.8L20 32l-3.8-10.2L6 18l10.2-3.8L20 5z"/>
+                            <path d="M31 5v7m-3.5-3.5h7M9 29v6m-3-3h6"/>
+                        </svg>
+                    </div>
+
+                    <h4>Special Moments</h4>
+
+                    <p>
+                        From little milestones to big celebrations,
+                        give every moment its own sweet touch.
+                    </p>
+
+                    <a href="custom-orders.html#cakeOrderForm" class="h2-custom-occasion-link">
+                        Make it memorable
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7 17L17 7M8 7H17V16"/>
+                        </svg>
+                    </a>
+
+                </article>
+
+            </div>
+        </div>
+
+
+        <!-- CLOSING SIGNATURE -->
+        <div class="h2-custom-signature">
+            <span></span>
+            <p>A little sweetness makes a big memory.</p>
+            <span></span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     BUTTERCUP — HOME 2 EDITORIAL JOURNAL
+========================================= -->
+
+<section class="h2-journal" id="journal">
+
+    <div class="h2-journal-container">
+
+        <!-- SECTION INTRO -->
+        <div class="h2-journal-heading">
+
+            <div class="h2-journal-eyebrow">
+                <span></span>
+                THE BUTTERCUP JOURNAL
+                <span></span>
+            </div>
+
+            <h2>
+                Stories worth
+                <em>savouring.</em>
+            </h2>
+
+            <p>
+                A little inspiration from our bakehouse.
+                Discover the craft behind your favourite bakes,
+                thoughtful tips from our kitchen and the little
+                details that make every treat special.
+            </p>
+
+        </div>
+
+
+        <!-- FEATURED STORY -->
+        <article class="h2-journal-featured">
+
+            <!-- FEATURED IMAGE -->
+            <a href="blog.html#perfect-cake"
+               class="h2-journal-featured-image"
+               aria-label="Read The Art of a Perfect Cake">
+
+                <img
+                    src="../assets/images/logo/editorcake.jpg"
+                    alt="Beautiful layered celebration cake with elegant decoration"
+                    loading="lazy"
+                >
+
+                <span class="h2-journal-featured-tag">
+                    EDITOR'S PICK
+                </span>
+
+                <span class="h2-journal-image-caption">
+                    THE ART OF CELEBRATION
+                </span>
+
+            </a>
+
+
+            <!-- FEATURED CONTENT -->
+            <div class="h2-journal-featured-content">
+
+                <div class="h2-journal-meta">
+                    <span>CAKE INSPIRATION</span>
+                    <span class="h2-journal-meta-divider"></span>
+                    <span>5 MIN READ</span>
+                </div>
+
+                <span class="h2-journal-featured-kicker">
+                    A LITTLE SOMETHING TO CELEBRATE
+                </span>
+
+                <h3>
+                    The Art of a
+                    <em>Perfect Cake.</em>
+                </h3>
+
+                <p class="h2-journal-featured-description">
+                    A beautiful cake is more than its finishing
+                    touches. It begins with a soft, delicate sponge,
+                    layers of carefully chosen flavour and the
+                    patience to bring every detail together.
+                </p>
+
+                <p class="h2-journal-featured-description">
+                    Discover the little things that make a
+                    celebration cake memorable, from choosing
+                    the right texture to finding a finish that
+                    feels just right for your occasion.
+                </p>
+
+                <div class="h2-journal-featured-footer">
+
+                    <span class="h2-journal-byline">
+                        A NOTE FROM OUR BAKEHOUSE
+                    </span>
+
+                    <a href="blog.html#perfect-cake"
+                       class="h2-journal-read-button">
+
+                        <span>Read the Story</span>
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7 17L17 7M8 7H17V16"/>
+                        </svg>
+
+                    </a>
+
+                </div>
+
+                <span class="h2-journal-featured-number">
+                    01
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- MORE STORIES HEADING -->
+        <div class="h2-journal-more-heading">
+
+            <div>
+                <span class="h2-journal-small-eyebrow">
+                    FRESH FROM OUR KITCHEN
+                </span>
+
+                <h3>
+                    A few more
+                    <em>good reads.</em>
+                </h3>
+            </div>
+
+            <span class="h2-journal-story-count">
+                THE LATEST STORIES / 02—04
+            </span>
+
+        </div>
+
+
+        <!-- ARTICLE GRID -->
+        <div class="h2-journal-grid">
+
+
+            <!-- ARTICLE 02 -->
+            <article class="h2-journal-card">
+
+                <a href="blog.html#good-bread"
+                   class="h2-journal-card-image">
+
+                    <img
+                        src="../assets/images/logo/b1.jpg"
+                        alt="Fresh artisan bread with a golden crust"
+                        loading="lazy"
+                    >
+
+                    <span class="h2-journal-card-category">
+                        FROM OUR KITCHEN
+                    </span>
+
+                    <span class="h2-journal-card-number">02</span>
+
+                </a>
+
+                <div class="h2-journal-card-content">
+
+                    <div class="h2-journal-meta">
+                        <span>BAKING SECRETS</span>
+                        <span class="h2-journal-meta-divider"></span>
+                        <span>4 MIN READ</span>
+                    </div>
+
+                    <h4>
+                        The Secret to
+                        <em>Good Bread.</em>
+                    </h4>
+
+                    <p>
+                        What gives a loaf its golden crust and
+                        wonderfully soft centre? Explore the
+                        simple ingredients, careful preparation
+                        and patience behind a beautiful loaf.
+                    </p>
+
+                    <a href="blog.html#good-bread"
+                       class="h2-journal-card-link">
+
+                        Read the Story
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7 17L17 7M8 7H17V16"/>
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE 03 -->
+            <article class="h2-journal-card">
+
+                <a href="blog.html#love-for-pastries"
+                   class="h2-journal-card-image">
+
+                    <img
+                        src="../assets/images/logo/pastries.jpg"
+                        alt="Golden buttery croissants and freshly baked pastries"
+                        loading="lazy"
+                    >
+
+                    <span class="h2-journal-card-category">
+                        LITTLE INDULGENCES
+                    </span>
+
+                    <span class="h2-journal-card-number">03</span>
+
+                </a>
+
+                <div class="h2-journal-card-content">
+
+                    <div class="h2-journal-meta">
+                        <span>OUR FAVOURITES</span>
+                        <span class="h2-journal-meta-divider"></span>
+                        <span>3 MIN READ</span>
+                    </div>
+
+                    <h4>
+                        A Little Love
+                        <em>for Pastries.</em>
+                    </h4>
+
+                    <p>
+                        Flaky layers, delicate textures and
+                        buttery goodness. Take a closer look
+                        at the little details that make freshly
+                        baked pastries so irresistible.
+                    </p>
+
+                    <a href="blog.html#love-for-pastries"
+                       class="h2-journal-card-link">
+
+                        Read the Story
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7 17L17 7M8 7H17V16"/>
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE 04 -->
+            <article class="h2-journal-card">
+
+                <a href="blog.html#baking-at-home"
+                   class="h2-journal-card-image">
+
+                    <img
+                        src="../assets/images/logo/homeb.jpg"
+                        alt="Baking ingredients and tools arranged on a kitchen counter"
+                        loading="lazy"
+                    >
+
+                    <span class="h2-journal-card-category">
+                        BAKING NOTES
+                    </span>
+
+                    <span class="h2-journal-card-number">04</span>
+
+                </a>
+
+                <div class="h2-journal-card-content">
+
+                    <div class="h2-journal-meta">
+                        <span>BAKE AT HOME</span>
+                        <span class="h2-journal-meta-divider"></span>
+                        <span>6 MIN READ</span>
+                    </div>
+
+                    <h4>
+                        The Joy of
+                        <em>Baking at Home.</em>
+                    </h4>
+
+                    <p>
+                        A mixing bowl, a few simple ingredients
+                        and a little time. Find inspiration for
+                        bringing the warmth and joy of baking
+                        into your own kitchen.
+                    </p>
+
+                    <a href="blog.html#baking-at-home"
+                       class="h2-journal-card-link">
+
+                        Read the Story
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7 17L17 7M8 7H17V16"/>
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- JOURNAL FOOTER -->
+        <div class="h2-journal-footer">
+
+            <div class="h2-journal-footer-copy">
+                <span class="h2-journal-small-eyebrow">
+                    THERE'S MORE TO DISCOVER
+                </span>
+
+                <p>
+                    From our oven to your reading list.
+                    Explore every story from Buttercup.
+                </p>
+            </div>
+
+            <a href="blog.html" class="h2-journal-all-link">
+
+                <span>Explore All Stories</span>
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M8 7H17V16"/>
+                </svg>
+
+            </a>
+
+        </div>
+
+
+        <!-- CLOSING DETAIL -->
+        <div class="h2-journal-signature">
+            <span></span>
+            <p>Good things are always worth sharing.</p>
+            <span></span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    
+<!-- =====================================
+     PREMIUM FOOTER CTA
+===================================== -->
+
+<section class="h2-footer-cta" aria-label="Custom cake call to action">
+
+    <div class="h2-footer-cta-inner">
+
+        <span class="h2-footer-cta-eyebrow">
+            A LITTLE SOMETHING TO CELEBRATE
+        </span>
+
+        <h2>
+            Every celebration deserves
+            <em>something sweet.</em>
+        </h2>
+
+        <p>
+            From birthdays to beautiful little milestones,
+            let's create a cake that makes your moment even more special.
+        </p>
+
+        <a href="custom-orders.html#cakeOrderForm" class="h2-footer-cta-button">
+            Create Your Custom Cake
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17L17 7M8 7H17V16"/>
+            </svg>
+        </a>
+
+        <span class="h2-footer-cta-note">
+            MADE WITH CARE. CREATED FOR YOUR MOMENTS.
+        </span>
+
+    </div>
+
+</section>
+
+
+    <!--FOOTER-->
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="brand-logo"
+               src="../assets/images/logo/logoo.jpg"
+               alt="">
+          <span class="brand-name">
+            Buttercup
+            <small>BAKEHOUSE</small>
+          </span>
+        </a>
+
+        <p class="footer-tagline">
+          Baked with love, always
+          <svg class="footer-heart" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+          </svg>
+        </p>
+
+        <p class="footer-description">
+          Little moments, made sweeter. Thoughtful bakes,
+          honest ingredients and a warm welcome every day.
+        </p>
+
+        <div class="footer-socials">
+
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1Z"/>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle class="social-dot" cx="17.5" cy="6.8" r="1"/>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 8.2a2.8 2.8 0 0 0-2-2C17.2 5.7 12 5.7 12 5.7s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.7 12a29 29 0 0 0 .3 3.8 2.8 2.8 0 0 0 2 2c1.8.5 7 .5 7 .5s5.2 0 7-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .3-3.8 29 29 0 0 0-.3-3.8Z"/>
+              <path class="social-play" d="m10 9 5 3-5 3Z"/>
+            </svg>
+          </a>
+
+          <a href="mailto:hello@buttercupbakehouse.example" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m4 7 8 6 8-6"/>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 4h4l10 16h-4L5 4Zm0 16L19 4M5 4l14 16"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="products.html">Shop All Bakes</a>
+        <a href="blog.html">The Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- From the Oven -->
+      <div class="footer-col">
+        <h4>From the Oven</h4>
+        <a href="products.html?category=cakes">Celebration Cakes</a>
+        <a href="products.html?category=pastries">Pastries</a>
+        <a href="products.html?category=breads">Fresh Breads</a>
+        <a href="custom-orders.html">Custom Orders</a>
+        <a href="products.html">Seasonal Treats</a>
+      </div>
+
+      <!-- Come Say Hello -->
+      <div class="footer-col footer-visit">
+        <h4>Come Say Hello</h4>
+
+        <a class="visit-item"
+           href="https://www.google.com/maps/search/?api=1&query=bakeries+Bengaluru"
+           target="_blank" rel="noopener">
+          <span class="visit-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </span>
+          <span>
+            <b>Find Our Bakery</b>
+            <small>Bengaluru, Karnataka</small>
+          </span>
+        </a>
+
+        <div class="visit-item">
+          <span class="visit-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+          </span>
+          <span>
+            <b>Bakery Hours</b>
+            <small>Tuesday – Sunday · 8 AM – 7 PM</small>
+          </span>
+        </div>
+
+        <a class="visit-item"
+           href="mailto:hello@buttercupbakehouse.example">
+          <span class="visit-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m4 7 8 6 8-6"/>
+            </svg>
+          </span>
+          <span>
+            <b>Drop Us a Note</b>
+            <small>hello@buttercupbakehouse.example</small>
+          </span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>
+        © <span id="year"></span> Buttercup Bakehouse. All rights reserved.
+      </span>
+
+      <span class="footer-legal">
+        <a href="404.html">Privacy Policy</a>
+        <i>|</i>
+        <a href="404.html">Terms &amp; Conditions</a>
+      </span>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>

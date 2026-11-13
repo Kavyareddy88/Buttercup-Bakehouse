@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Cake Orders | Buttercup Bakehouse</title>
+
+    <meta name="description"
+        content="Create a custom celebration cake with Buttercup Bakehouse. Share your date, flavour and design inspiration.">
+
+    <meta name="theme-color" content="#493226">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" sizes="64x64" href="../assets/images/logo/logoo.jpg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom-orders.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    <link rel="stylesheet" href="../assets/css/buttercup-premium.css">
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/custom-orders.js" defer></script>
+</head>
+
+<body id="top" data-active="custom">
+
+    <!-- HEADER -->
+   <!--HEADER-->
+
+  <header class="site-header">
+  <div class="container header-inner">
+
+    <a class="brand" href="index.html" aria-label="Buttercup Bakehouse home">
+      <img class="brand-logo"
+           src="../assets/images/logo/logoo.jpg"
+           alt="">
+
+      <span class="brand-name">
+        Buttercup
+        <small>BAKEHOUSE</small>
+      </span>
+    </a>
+
+    <button class="icon-btn menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+
+      <div class="home-dropdown">
+  <button
+    class="home-dropdown-trigger "
+    id="homeDropdownToggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="homeDropdownMenu"
+  >
+    <span>Home</span>
+  <span class="home-dropdown-arrow" aria-hidden="true">
+  <svg viewBox="0 0 16 16" width="13" height="13">
+    <path d="M3.5 5.5 8 10l4.5-4.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+</span>
+  </button>
+
+  <div class="home-dropdown-menu" id="homeDropdownMenu">
+    <a href="index.html">Home – Classic</a>
+    <a href="home2.html">Home – Premium</a>
+  </div>
+</div>
+
+      <a data-nav="about" href="about.html">About</a>
+      <a data-nav="products" href="products.html">Products</a>
+      <a data-nav="custom" href="custom-orders.html">Custom Cakes</a>
+      <a data-nav="blog" href="blog.html">Blog</a>
+      <a data-nav="contact" href="contact.html">Contact</a>
+
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="direction-toggle"
+              id="rtlToggle"
+              type="button"
+              aria-label="Switch text direction">
+        RTL
+      </button>
+
+      <button class="icon-btn theme-toggle"
+              id="themeToggle"
+              type="button"
+              aria-label="Toggle dark mode"
+              title="Toggle dark mode">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+
+      <a class="header-order" href="contact.html#contact-form">
+        Order a Cake <svg
+    class="about-btn-arrow"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="17"
+    height="17"
+    fill="none"
+    aria-hidden="true"
+  >
+    <path
+      d="M7 17L17 7M8 7H17V16"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+      </a>
+
+    </div>
+  </div>
+</header>
+  
+
+    <!-- MAIN CONTENT -->
+    <main>
+      
+
+<!-- CUSTOM CAKE ORDERS HERO -->
+<section class="custom-orders-hero">
+
+    <!-- BACKGROUND OVERLAY -->
+    <div class="custom-orders-overlay"></div>
+
+    <!-- HERO CONTENT -->
+    <div class="custom-orders-container">
+
+        <div class="custom-orders-content">
+
+            <h1>
+                A cake as lovely.
+                <em>Made just for you.</em>
+                
+            </h1>
+
+            <p>
+
+                
+                Birthdays, little milestones, 
+                big celebrations or simply because.<br>
+                Tell us what you're dreaming of and we'll help make it real.<br>
+
+
+            </p>
+
+            <!-- HERO BUTTONS -->
+            <div class="custom-orders-buttons">
+
+                <!-- PRIMARY BUTTON -->
+                <a href="#cakeOrderForm" class="custom-primary-btn">
+
+                    Start Your Enquiry
+
+                    <svg
+                        class="custom-btn-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+
+                        <path
+                            d="M7 17L17 7M7 7H17V17"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+
+                    </svg>
+
+                </a>
+
+                <!-- SECONDARY BUTTON -->
+                <a href="products.html?category=cakes"
+                    class="custom-secondary-btn">
+
+                    Explore Our Cakes
+
+                    <svg
+                        class="custom-btn-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+
+                        <path
+                            d="M7 17L17 7M7 7H17V17"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+            <!-- HERO HIGHLIGHTS -->
+            <div class="custom-orders-highlights">
+
+                <span>01 &nbsp; Custom Designs</span>
+
+                <span>02 &nbsp; Premium Ingredients</span>
+
+                <span>03 &nbsp; Made with Love</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SECTION 1: CHOOSE YOUR CELEBRATION -->
+<section class="cake-occasions">
+    <div class="cake-section-wrap">
+
+        <div class="cake-section-heading">
+            <span class="cake-eyebrow">MADE FOR YOUR MOMENT</span>
+            <h2>Every celebration deserves
+                <em>a little sweetness.</em>
+            </h2>
+            <p>
+                Whatever the occasion, we'll make a cake that feels
+                just right for your special moment.
+            </p>
+        </div>
+
+        
+<div class="occasion-grid">
+
+    <!-- 01 - BIRTHDAY CAKES -->
+    <article class="occasion-card">
+        <img src="../assets/images/logo/bday.jpg" alt="Birthday celebration cake">
+        <div class="occasion-info">
+            <span>01 / CELEBRATE</span>
+            <h3>Birthday Cakes</h3>
+            <p>Make their day a little more memorable with a cake made just for them.</p>
+            <a href="#cakeOrderForm" class="cake-text-link">
+                Create yours
+                
+            </a>
+        </div>
+    </article>
+
+    <!-- 02 - WEDDING CAKES -->
+    <article class="occasion-card">
+        <img src="../assets/images/logo/wedding.jpg" alt="Wedding celebration cake">
+        <div class="occasion-info">
+            <span>02 / TOGETHER</span>
+            <h3>Wedding Cakes</h3>
+            <p>Beautiful centrepieces for the beginning of something wonderful.</p>
+            <a href="#cakeOrderForm" class="cake-text-link">
+                Create yours
+                
+            </a>
+        </div>
+    </article>
+
+    <!-- 03 - LITTLE CELEBRATIONS -->
+    <article class="occasion-card">
+        <img src="../assets/images/logo/celebration.jpg" alt="Special occasion cake">
+        <div class="occasion-info">
+            <span>03 / JUST BECAUSE</span>
+            <h3>Little Celebrations</h3>
+            <p>Anniversaries, surprises or simply a sweet reason to celebrate.</p>
+            <a href="#cakeOrderForm" class="cake-text-link">
+                Create yours
+                
+            </a>
+        </div>
+    </article>
+
+    <!-- 04 - BABY SHOWER CAKES -->
+    <article class="occasion-card">
+        <img src="../assets/images/logo/baby.jpg" alt="Baby shower celebration cake">
+        <div class="occasion-info">
+            <span>04 / NEW BEGINNINGS</span>
+            <h3>Baby Shower Cakes</h3>
+            <p>Sweet and thoughtful designs for welcoming your newest little arrival.</p>
+            <a href="#cakeOrderForm" class="cake-text-link">
+                Create yours
+               
+            </a>
+        </div>
+    </article>
+
+    <!-- 05 - ENGAGEMENT CAKES -->
+    <article class="occasion-card">
+        <img src="../assets/images/logo/engage.jpg" alt="Engagement celebration cake">
+        <div class="occasion-info">
+            <span>05 / FOREVER STARTS</span>
+            <h3>Engagement Cakes</h3>
+            <p>Celebrate the promise of forever with a cake made for your special day.</p>
+            <a href="#cakeOrderForm" class="cake-text-link">
+                Create yours
+                
+            </a>
+        </div>
+    </article>
+
+    <!-- 06 - CORPORATE CAKES -->
+    <article class="occasion-card">
+        <img src="../assets/images/logo/corpo.jpg" alt="Custom chocolate celebration cake">
+        <div class="occasion-info">
+            <span>06 / BIG MOMENTS</span>
+            <h3>Corporate Cakes</h3>
+            <p>Make milestones, office celebrations and special achievements even sweeter.</p>
+            <a href="#cakeOrderForm" class="cake-text-link">
+                Create yours
+                
+            </a>
+        </div>
+    </article>
+
+</div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SECTION 2: CAKE INSPIRATION -->
+<section class="cake-inspiration">
+    <div class="cake-section-wrap">
+
+        <div class="inspiration-heading">
+            <div>
+                <span class="cake-eyebrow">A LITTLE INSPIRATION</span>
+                <h2>Your idea. Your style.
+                    <em>Your kind of cake.</em>
+                </h2>
+            </div>
+
+            <p>
+                From delicate details to rich chocolate finishes,
+                explore a few styles to inspire your own creation.
+            </p>
+        </div>
+
+        <div class="inspiration-grid">
+
+            <div class="inspiration-item inspiration-large">
+                <img src="../assets/images/logo/floral.jpg" alt="Elegant custom cake">
+                <div class="inspiration-caption">
+                    <span>01</span>
+                    <h3>Elegant & Floral</h3>
+                </div>
+            </div>
+
+            <div class="inspiration-item">
+                <img src="../assets/images/logo/rich.jpg" alt="Chocolate cake">
+                <div class="inspiration-caption">
+                    <span>02</span>
+                    <h3>Rich & Chocolatey</h3>
+                </div>
+            </div>
+
+            <div class="inspiration-item">
+                <img src="../assets/images/logo/personal.jpg" alt="Decorated celebration cake">
+                <div class="inspiration-caption">
+                    <span>03</span>
+                    <h3>Playful & Personal</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="inspiration-bottom">
+            <p>Have something different in mind? We'd love to hear it.</p>
+            <a href="#cakeOrderForm" class="cake-primary-btn">
+                Share Your Idea
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M7 7H17V17"/>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SECTION 3: HOW IT WORKS -->
+<section class="cake-process">
+    <div class="cake-section-wrap">
+
+        <div class="process-intro">
+            <span class="cake-eyebrow">SIMPLE AS THAT</span>
+            <h2>Four little steps.
+                <em>One lovely cake.</em>
+            </h2>
+            <p>
+                Ordering your custom cake should be just as enjoyable
+                as celebrating with it.
+            </p>
+        </div>
+
+        <div class="process-grid">
+
+            <article class="process-card">
+                <span class="process-number">01</span>
+                <h3>Tell us your idea</h3>
+                <p>Share your occasion, preferred flavours, design ideas and inspiration.</p>
+            </article>
+
+            <article class="process-card">
+                <span class="process-number">02</span>
+                <h3>Let's plan it</h3>
+                <p>We'll discuss the details, size, design and your preferred date.</p>
+            </article>
+
+            <article class="process-card">
+                <span class="process-number">03</span>
+                <h3>We bake with care</h3>
+                <p>Our team prepares your cake using carefully selected ingredients.</p>
+            </article>
+
+            <article class="process-card">
+                <span class="process-number">04</span>
+                <h3>Make it memorable</h3>
+                <p>Your custom creation is ready to become part of your celebration.</p>
+            </article>
+
+        </div>
+
+        <div class="process-footer">
+            <span>GOOD THINGS TAKE A LITTLE LOVE.</span>
+            <a href="#cakeOrderForm" class="cake-secondary-btn">
+                Start Your Enquiry
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M7 7H17V17"/>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- SECTION 4: CUSTOM CAKE ENQUIRY -->
+<section class="cake-enquiry" id="cakeOrderForm">
+    <div class="cake-section-wrap">
+
+        <div class="enquiry-layout">
+
+            <!-- LEFT: ENQUIRY CONTENT -->
+            <div class="enquiry-content">
+
+                <span class="cake-eyebrow">LET'S MAKE IT SWEET</span>
+
+                <h2>
+                    Tell us what
+                    <em>you're dreaming of.</em>
+                </h2>
+
+                <p>
+                    Every lovely cake starts with an idea.
+                    Tell us a little about yours and we'll help
+                    bring it to life with thoughtful details
+                    and freshly baked goodness.
+                </p>
+
+                <div class="enquiry-note">
+                    <span>PERSONALISED FOR YOU</span>
+                    <h3>Thoughtfully made.<br>Freshly baked. Full of love.</h3>
+                </div>
+
+                <div class="enquiry-extra">
+
+                    <h3>A little inspiration goes a long way.</h3>
+
+                    <p>
+                        Whether you're planning a birthday,
+                        celebrating a special milestone or simply
+                        surprising someone you love, we'd be happy
+                        to create a cake that feels just right.
+                    </p>
+
+                    <ul>
+                        <li>Share your favourite flavours and colours</li>
+                        <li>Tell us about your preferred design</li>
+                        <li>Include any special touches you'd love</li>
+                    </ul>
+
+                    <p>
+                        Have a picture or inspiration in mind?
+                        Feel free to share your ideas when we get
+                        in touch.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT: ENQUIRY FORM -->
+            <form class="cake-enquiry-form">
+
+                <div class="form-heading">
+                    <span>YOUR CAKE DETAILS</span>
+                    <h3>Let's get started.</h3>
+                </div>
+
+                <div class="cake-form-row">
+                    <div class="cake-field">
+                        <label for="cakeName">Your Name</label>
+                        <input type="text" id="cakeName" name="name"
+                            placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="cake-field">
+                        <label for="cakePhone">Phone Number</label>
+                        <input type="tel" id="cakePhone" name="phone"
+                            placeholder="Your contact number" required>
+                    </div>
+                </div>
+
+                <div class="cake-form-row">
+                    <div class="cake-field">
+                        <label for="cakeOccasion">Occasion</label>
+                        <select id="cakeOccasion" name="occasion" required>
+                            <option value="">Choose occasion</option>
+                            <option>Birthday</option>
+                            <option>Wedding</option>
+                            <option>Anniversary</option>
+                            <option>Baby Shower</option>
+                            <option>Other Celebration</option>
+                        </select>
+                    </div>
+
+                    <div class="cake-field">
+                        <label for="cakeDate">Required Date</label>
+                        <input type="date" id="cakeDate" name="date" required>
+                    </div>
+                </div>
+
+                <div class="cake-form-row">
+                    <div class="cake-field">
+                        <label for="cakeFlavour">Preferred Flavour</label>
+                        <select id="cakeFlavour" name="flavour">
+                            <option value="">Choose a flavour</option>
+                            <option>Chocolate</option>
+                            <option>Vanilla</option>
+                            <option>Red Velvet</option>
+                            <option>Butterscotch</option>
+                            <option>Fruit</option>
+                            <option>Not Sure Yet</option>
+                        </select>
+                    </div>
+
+                    <div class="cake-field">
+                        <label for="cakeSize">Cake Size</label>
+                        <select id="cakeSize" name="size">
+                            <option value="">Choose size</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                            <option>Need Guidance</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="cake-field">
+                    <label for="cakeMessage">Tell us about your cake</label>
+                    <textarea id="cakeMessage" name="message" rows="4"
+                        placeholder="Design, colours, inspiration, special requests..."></textarea>
+                </div>
+
+                <button type="submit" class="cake-primary-btn cake-submit-btn">
+                    Send Your Enquiry
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 17L17 7M7 7H17V17"/>
+                    </svg>
+                </button>
+
+                <p class="form-small-note">
+                    We'll get in touch to discuss your custom cake.
+                </p>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+
+         </main>
+
+
+    <!-- FOOTER CTA SECTION -->
+    <section class="footer-cta" aria-label="Custom cake call to action">
+
+        <div class="container footer-cta-inner">
+
+            <div>
+
+                <span class="eyebrow">A LITTLE SOMETHING TO CELEBRATE</span>
+
+                <h2>
+                    Let's make something <em>sweet.</em>
+                </h2>
+
+                <p>
+                    Tell us what you're celebrating.
+                    We'll bring the buttercream, the sprinkles and a little magic.
+                </p>
+
+            </div>
+
+            <a class="btn" href="custom-orders.html#cakeOrderForm">
+                Create your custom cake
+                <span aria-hidden="true"></span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!--FOOTER-->
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="brand-logo"
+               src="../assets/images/logo/logoo.jpg"
+               alt="">
+          <span class="brand-name">
+            Buttercup
+            <small>BAKEHOUSE</small>
+          </span>
+        </a>
+
+        <p class="footer-tagline">
+          Baked with love, always
+          <svg class="footer-heart" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+          </svg>
+        </p>
+
+        <p class="footer-description">
+          Little moments, made sweeter. Thoughtful bakes,
+          honest ingredients and a warm welcome every day.
+        </p>
+
+        <div class="footer-socials">
+
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1Z"/>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle class="social-dot" cx="17.5" cy="6.8" r="1"/>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 8.2a2.8 2.8 0 0 0-2-2C17.2 5.7 12 5.7 12 5.7s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.7 12a29 29 0 0 0 .3 3.8 2.8 2.8 0 0 0 2 2c1.8.5 7 .5 7 .5s5.2 0 7-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .3-3.8 29 29 0 0 0-.3-3.8Z"/>
+              <path class="social-play" d="m10 9 5 3-5 3Z"/>
+            </svg>
+          </a>
+
+          <a href="mailto:hello@buttercupbakehouse.example" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m4 7 8 6 8-6"/>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 4h4l10 16h-4L5 4Zm0 16L19 4M5 4l14 16"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="products.html">Shop All Bakes</a>
+        <a href="blog.html">The Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- From the Oven -->
+      <div class="footer-col">
+        <h4>From the Oven</h4>
+        <a href="products.html?category=cakes">Celebration Cakes</a>
+        <a href="products.html?category=pastries">Pastries</a>
+        <a href="products.html?category=breads">Fresh Breads</a>
+        <a href="custom-orders.html">Custom Orders</a>
+        <a href="products.html">Seasonal Treats</a>
+      </div>
+
+      <!-- Come Say Hello -->
+      <div class="footer-col footer-visit">
+        <h4>Come Say Hello</h4>
+
+        <a class="visit-item"
+           href="https://www.google.com/maps/search/?api=1&query=bakeries+Bengaluru"
+           target="_blank" rel="noopener">
+          <span class="visit-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </span>
+          <span>
+            <b>Find Our Bakery</b>
+            <small>Bengaluru, Karnataka</small>
+          </span>
+        </a>
+
+        <div class="visit-item">
+          <span class="visit-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+          </span>
+          <span>
+            <b>Bakery Hours</b>
+            <small>Tuesday – Sunday · 8 AM – 7 PM</small>
+          </span>
+        </div>
+
+        <a class="visit-item"
+           href="mailto:hello@buttercupbakehouse.example">
+          <span class="visit-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m4 7 8 6 8-6"/>
+            </svg>
+          </span>
+          <span>
+            <b>Drop Us a Note</b>
+            <small>hello@buttercupbakehouse.example</small>
+          </span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>
+        © <span id="year"></span> Buttercup Bakehouse. All rights reserved.
+      </span>
+
+      <span class="footer-legal">
+        <a href="404.html">Privacy Policy</a>
+        <i>|</i>
+        <a href="404.html">Terms &amp; Conditions</a>
+      </span>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+
+</html>

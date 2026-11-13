@@ -1,0 +1,30 @@
+
+/* =========================================
+   ERROR PAGE
+========================================= */
+
+.error-page {
+    min-height: 68vh;
+
+    display: grid;
+    place-items: center;
+
+    text-align: center;
+    padding: 70px 0;
+}
+
+
+/* Error Number */
+.error-number {
+    font: 500 clamp(7rem, 22vw, 15rem) / .8 var(--serif);
+
+    color: var(--secondary);
+    letter-spacing: -.08em;
+}
+
+
+/* Error Page Description */
+.error-page p {
+    max-width: 520px;
+    margin: 20px auto 28px;
+}

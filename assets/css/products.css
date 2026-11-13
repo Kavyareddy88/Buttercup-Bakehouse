@@ -1,0 +1,3114 @@
+
+/* =====================================================
+   BUTTERCUP BAKEHOUSE
+   PRODUCTS PAGE — COMPLETE STYLESHEET
+   Theme: Chocolate Brown + Terracotta + Cream
+===================================================== */
+
+
+/* =====================================================
+   01. PRODUCTS PAGE THEME
+===================================================== */
+
+:root {
+    --products-primary: #493226;
+    --products-secondary: #C96F50;
+    --products-deep: #793E2E;
+
+    --products-gradient: linear-gradient(
+        110deg,
+        #C96F50 0%,
+        #A6533D 55%,
+        #793E2E 100%
+    );
+
+    --products-bg: #FFF8F0;
+    --products-white: #FFFFFF;
+    --products-surface: #F7F1E9;
+    --products-beige: #EADBD0;
+
+    --products-text: #493226;
+    --products-muted: #79675D;
+
+    --products-line: rgba(73, 50, 38, 0.15);
+}
+
+
+/* =====================================================
+   02. PRODUCTS PAGE BASE
+===================================================== */
+
+.products-page,
+body[data-active="products"] {
+    background: var(--products-bg);
+    color: var(--products-text);
+}
+
+.products-page *,
+body[data-active="products"] main * {
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   03. PRODUCTS HERO
+===================================================== */
+
+.products-hero {
+    position: relative;
+    isolation: isolate;
+
+    width: 100%;
+    min-height: calc(100vh - 78px);
+    min-height: calc(100svh - 78px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 38px 7% 55px;
+
+    overflow: hidden;
+
+    background: var(--products-bg);
+    color: var(--products-text);
+}
+
+
+/* HERO INNER LAYOUT */
+
+.products-hero-inner {
+    width: 100%;
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    gap: 55px;
+}
+
+
+/* =====================================================
+   04. HERO TEXT
+===================================================== */
+
+.products-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 650px;
+
+    animation: productsTextReveal 1s ease both;
+}
+
+
+/* EYEBROW */
+
+.products-hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 24px;
+
+    color: var(--products-secondary);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.products-hero-eyebrow::before {
+    content: "";
+
+    width: 28px;
+    height: 1px;
+
+    background: var(--products-secondary);
+}
+
+
+/* MAIN HEADING */
+
+.products-hero-content h1 {
+    margin: 0 0 25px;
+
+    color: var(--products-primary);
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 5.6vw, 82px);
+    font-weight: 500;
+
+    line-height: 1.08;
+    letter-spacing: -2.5px;
+}
+
+.products-hero-content h1 span {
+    display: block;
+
+    color: var(--products-secondary);
+
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* DESCRIPTION */
+
+.products-hero-content > p {
+    max-width: 560px;
+
+    margin: 0 0 32px;
+
+    color: var(--products-muted);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   05. HERO BUTTONS
+===================================================== */
+
+.products-hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-bottom: 38px;
+}
+
+
+/* PRIMARY BUTTON — SAME MODEL AS ORDER A CAKE */
+
+.products-hero-primary {
+    min-height: 59px;
+
+    padding: 0 29px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+
+    border: 1px solid transparent;
+    border-radius: 50px;
+
+    background: var(--products-gradient);
+    color: #FFFFFF;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow: none;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        filter 0.3s ease;
+}
+
+.products-hero-primary svg {
+    width: 15px;
+    height: 15px;
+
+    flex-shrink: 0;
+
+    transition: transform 0.3s ease;
+}
+
+.products-hero-primary:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.05);
+
+    box-shadow: 0 9px 22px rgba(121, 62, 46, 0.16);
+}
+
+.products-hero-primary:hover svg {
+    transform: translate(3px, -3px);
+}
+
+
+/* SECONDARY BUTTON — OUTLINE MODEL */
+
+.products-hero-secondary {
+    min-height: 59px;
+
+    padding: 0 29px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--products-secondary);
+    border-radius: 50px;
+
+    background: transparent;
+    color: var(--products-primary);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.products-hero-secondary:hover {
+    background: var(--products-secondary);
+    border-color: var(--products-secondary);
+
+    color: #FFFFFF;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   06. HERO CATEGORY HIGHLIGHTS
+===================================================== */
+
+.products-hero-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 17px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--products-line);
+}
+
+.products-hero-categories a {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--products-primary);
+
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.products-hero-categories a span {
+    color: var(--products-secondary);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.products-hero-categories a:hover {
+    color: var(--products-secondary);
+}
+
+
+/* =====================================================
+   07. HERO IMAGE
+===================================================== */
+
+.products-hero-visual {
+    position: relative;
+
+    width: 100%;
+    max-width: 680px;
+
+    justify-self: end;
+
+    animation: productsImageReveal 1.1s ease 0.15s both;
+}
+
+.products-hero-image-wrap {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+
+    height: min(68vh, 650px);
+    min-height: 420px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: var(--products-beige);
+}
+
+.products-hero-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 1s ease;
+}
+
+.products-hero-image-wrap:hover .products-hero-image {
+    transform: scale(1.035);
+}
+
+
+/* =====================================================
+   08. IMAGE FLOATING LABEL
+===================================================== */
+
+.products-hero-image-label {
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    width: fit-content;
+    max-width: 250px;
+
+    padding: 20px 24px;
+
+    border-radius: 17px;
+
+    background: var(--products-bg);
+    color: var(--products-primary);
+
+    box-shadow: 0 8px 25px rgba(73, 50, 38, 0.08);
+}
+
+.products-hero-image-label span {
+    color: var(--products-secondary);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.products-hero-image-label strong {
+    color: var(--products-primary);
+
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+/* =====================================================
+   09. IMAGE DECORATION
+===================================================== */
+
+.products-hero-decoration {
+    position: absolute;
+
+    top: -13px;
+    right: -13px;
+
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid var(--products-secondary);
+    border-radius: 25px;
+
+    opacity: 0.45;
+}
+
+
+/* SIDE NOTE */
+
+.products-hero-side-note {
+    position: absolute;
+
+    right: -35px;
+    top: 50%;
+
+    color: var(--products-secondary);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    writing-mode: vertical-rl;
+
+    transform: translateY(-50%);
+}
+
+
+/* =====================================================
+   10. SCROLL INDICATOR
+===================================================== */
+
+.products-hero-scroll {
+    position: absolute;
+
+    left: 7%;
+    bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    color: var(--products-muted);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.products-scroll-line {
+    width: 42px;
+    height: 1px;
+
+    background: var(--products-secondary);
+}
+
+
+/* =====================================================
+   11. PRODUCTS PAGE INTRO
+===================================================== */
+
+.page-intro {
+    padding: 65px 0 35px;
+
+    text-align: center;
+
+    background: var(--products-bg);
+}
+
+.page-intro .eyebrow {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: var(--products-secondary);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+.page-intro h1 {
+    margin: 0 0 15px;
+
+    color: var(--products-primary);
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(35px, 4vw, 52px);
+    font-weight: 500;
+}
+
+.page-intro p {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    color: var(--products-muted);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   12. PRODUCT FILTER BUTTONS
+===================================================== */
+
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 30px 0 40px;
+}
+
+.filter-btn {
+    min-height: 42px;
+
+    padding: 0 21px;
+
+    border: 1px solid var(--products-line);
+    border-radius: 50px;
+
+    background: transparent;
+    color: var(--products-muted);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: var(--products-secondary);
+    color: var(--products-secondary);
+
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    border-color: transparent;
+
+    background: var(--products-gradient);
+    color: #FFFFFF;
+}
+
+
+/* =====================================================
+   13. PRODUCTS GRID
+===================================================== */
+
+.products-section {
+    padding: 15px 0 85px;
+
+    background: var(--products-bg);
+}
+
+.products-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   14. PRODUCT CARDS
+===================================================== */
+
+.product-card {
+    overflow: hidden;
+
+    background: var(--products-white);
+
+    border: 1px solid var(--products-line);
+    border-radius: 15px;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 35px rgba(73, 50, 38, 0.09);
+}
+
+.product-card .product-image {
+    width: 100%;
+
+    aspect-ratio: 4 / 4.2;
+
+    overflow: hidden;
+}
+
+.product-card .product-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-card .card-body {
+    padding: 20px;
+}
+
+.product-card .product-meta {
+    margin-bottom: 9px;
+
+    color: var(--products-secondary);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.product-card h3 {
+    margin: 0 0 9px;
+
+    color: var(--products-primary);
+
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.product-card .description {
+    min-height: 48px;
+
+    color: var(--products-muted);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   15. CUSTOM CAKE CTA
+===================================================== */
+
+.footer-cta {
+    position: relative;
+
+    padding: 65px 20px;
+
+    overflow: hidden;
+
+    background: var(--products-surface);
+    text-align: center;
+}
+
+.footer-cta-content {
+    max-width: 720px;
+
+    margin: 0 auto;
+}
+
+.footer-cta .eyebrow {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: var(--products-secondary);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+.footer-cta h2 {
+    margin: 0 0 15px;
+
+    color: var(--products-primary);
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 500;
+}
+
+.footer-cta p {
+    max-width: 570px;
+
+    margin: 0 auto 25px;
+
+    color: var(--products-muted);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* CTA BUTTON */
+
+.footer-cta .btn-primary {
+    min-height: 49px;
+
+    padding: 0 25px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    border: 1px solid transparent;
+    border-radius: 50px;
+
+    background: var(--products-gradient);
+    color: #FFFFFF;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.footer-cta .btn-primary svg {
+    width: 15px;
+    height: 15px;
+}
+
+.footer-cta .btn-primary:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 9px 22px rgba(121, 62, 46, 0.16);
+}
+
+
+/* =====================================================
+   16. ANIMATIONS
+===================================================== */
+
+@keyframes productsTextReveal {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes productsImageReveal {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =====================================================
+   17. TABLET RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .products-hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .products-hero-inner {
+        gap: 35px;
+    }
+
+    .products-hero-content h1 {
+        font-size: clamp(43px, 5.5vw, 65px);
+    }
+
+    .products-hero-image-wrap {
+        height: 510px;
+        min-height: 380px;
+    }
+
+    .products-hero-categories {
+        gap: 12px;
+    }
+
+    .products-hero-categories a {
+        font-size: 14px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =====================================================
+   18. SMALL TABLET
+===================================================== */
+
+@media (max-width: 760px) {
+
+    .products-hero {
+        min-height: auto;
+
+        padding: 65px 6% 80px;
+    }
+
+    .products-hero-inner {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .products-hero-content {
+        max-width: 650px;
+    }
+
+    .products-hero-content h1 {
+        font-size: clamp(46px, 8vw, 66px);
+    }
+
+    .products-hero-content > p {
+        max-width: 570px;
+    }
+
+    .products-hero-visual {
+        width: 100%;
+        max-width: 650px;
+
+        justify-self: center;
+    }
+
+    .products-hero-image-wrap {
+        height: 470px;
+        min-height: 0;
+    }
+
+    .products-hero-scroll {
+        display: none;
+    }
+
+    .products-hero-side-note {
+        right: -22px;
+    }
+}
+
+
+/* =====================================================
+   19. MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width: 520px) {
+
+    .products-hero {
+        padding: 48px 22px 55px;
+    }
+
+    .products-hero-eyebrow {
+        margin-bottom: 17px;
+
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .products-hero-content h1 {
+        font-size: clamp(42px, 11vw, 56px);
+
+        letter-spacing: -1.5px;
+        line-height: 1.12;
+    }
+
+    .products-hero-content > p {
+        margin-bottom: 25px;
+
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    .products-hero-buttons {
+        align-items: flex-start;
+
+        gap: 11px;
+        margin-bottom: 30px;
+    }
+
+    .products-hero-primary,
+    .products-hero-secondary {
+        min-height: 48px;
+
+        padding: 0 19px;
+
+        font-size: 11px;
+    }
+
+    .products-hero-categories {
+        gap: 9px;
+        padding-top: 17px;
+    }
+
+    .products-hero-categories a {
+        gap: 6px;
+        font-size: 12px;
+    }
+
+    .products-hero-image-wrap {
+        height: 370px;
+
+        border-radius: 19px;
+    }
+
+    .products-hero-decoration {
+        top: -9px;
+        right: -9px;
+
+        border-radius: 19px;
+    }
+
+    .products-hero-image-label {
+        left: 13px;
+        bottom: 13px;
+
+        padding: 14px 17px;
+
+        border-radius: 12px;
+    }
+
+    .products-hero-image-label strong {
+        font-size: 18px;
+    }
+
+    .products-hero-side-note {
+        right: -18px;
+        font-size: 7px;
+    }
+
+    .page-intro {
+        padding: 45px 18px 25px;
+    }
+
+    .filter-bar {
+        gap: 8px;
+        margin: 25px 0 30px;
+    }
+
+    .filter-btn {
+        min-height: 39px;
+        padding: 0 15px;
+        font-size: 11px;
+    }
+
+    .products-section {
+        padding-bottom: 55px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-cta {
+        padding: 50px 22px;
+    }
+}
+
+
+/* =====================================================
+   20. EXTRA SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .products-hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .products-hero-primary,
+    .products-hero-secondary {
+        width: 100%;
+    }
+
+    .products-hero-image-wrap {
+        height: 320px;
+    }
+
+    .products-hero-categories {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =====================================================
+   21. DARK MODE
+===================================================== */
+
+body.dark-mode[data-active="products"],
+body.dark-mode .products-hero,
+body.dark-mode .page-intro,
+body.dark-mode .products-section {
+    background: #211914;
+    color: #FFF8F0;
+}
+
+body.dark-mode .products-hero-content h1,
+body.dark-mode .products-hero-categories a,
+body.dark-mode .page-intro h1,
+body.dark-mode .product-card h3,
+body.dark-mode .footer-cta h2 {
+    color: #FFF0E4;
+}
+
+body.dark-mode .products-hero-content > p,
+body.dark-mode .page-intro p,
+body.dark-mode .product-card .description,
+body.dark-mode .footer-cta p {
+    color: #D1BFB1;
+}
+
+body.dark-mode .products-hero-secondary {
+    color: #FFF0E4;
+    border-color: var(--products-secondary);
+}
+
+body.dark-mode .products-hero-secondary:hover {
+    color: #FFFFFF;
+    background: var(--products-secondary);
+}
+
+body.dark-mode .products-hero-image-label {
+    background: #30231C;
+}
+
+body.dark-mode .products-hero-image-label strong {
+    color: #FFF0E4;
+}
+
+body.dark-mode .products-hero-categories {
+    border-color: rgba(255, 248, 240, 0.15);
+}
+
+body.dark-mode .filter-btn {
+    background: transparent;
+    border-color: rgba(255, 248, 240, 0.2);
+    color: #D1BFB1;
+}
+
+body.dark-mode .filter-btn.active {
+    background: var(--products-gradient);
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+body.dark-mode .product-card {
+    background: #30231C;
+    border-color: rgba(255, 248, 240, 0.1);
+}
+
+body.dark-mode .footer-cta {
+    background: #30231C;
+}
+
+
+/* =====================================================
+   22. RTL SUPPORT
+===================================================== */
+
+[dir="rtl"] .products-hero-content {
+    text-align: right;
+}
+
+[dir="rtl"] .products-hero-eyebrow {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .products-hero-image-label {
+    left: auto;
+    right: 25px;
+}
+
+[dir="rtl"] .products-hero-decoration {
+    right: auto;
+    left: -13px;
+}
+
+[dir="rtl"] .products-hero-side-note {
+    right: auto;
+    left: -35px;
+}
+
+[dir="rtl"] .products-hero-scroll {
+    left: auto;
+    right: 7%;
+}
+
+[dir="rtl"] .products-hero-primary svg {
+    transform: scaleX(-1);
+}
+
+[dir="rtl"] .products-hero-primary:hover svg {
+    transform: scaleX(-1) translate(3px, -3px);
+}
+
+[dir="rtl"] .products-hero-categories {
+    direction: rtl;
+}
+
+@media (max-width: 760px) {
+
+    [dir="rtl"] .products-hero-side-note {
+        left: -22px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    [dir="rtl"] .products-hero-image-label {
+        right: 13px;
+    }
+
+    [dir="rtl"] .products-hero-side-note {
+        left: -18px;
+    }
+}
+
+
+/* =====================================================
+   23. REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .products-hero-content,
+    .products-hero-visual {
+        animation: none;
+    }
+
+    .products-hero *,
+    .product-card,
+    .product-card img {
+        transition: none !important;
+    }
+}
+
+/* =========================================
+   PRODUCTS HERO — FINAL FIXES
+========================================= */
+
+/* Remove the eyebrow completely */
+.products-hero-eyebrow,
+.products-hero-eyebrow::before {
+    display: none !important;
+}
+
+/* Give the heading better top spacing */
+.products-hero-content h1 {
+    margin-top: 0;
+}
+
+
+/* =========================================
+   HERO IMAGE — SHOW COMPLETE IMAGE
+========================================= */
+
+.products-hero-image-wrap {
+    position: relative;
+    width: 100%;
+
+    height: auto;
+    aspect-ratio: 1.25 / 1;
+    min-height: 0;
+
+    overflow: hidden;
+    border-radius: 25px;
+
+    background: #F1E4D8;
+}
+
+.products-hero-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    transition: transform .6s ease;
+}
+
+/* Keep the complete image visible on hover */
+.products-hero-image-wrap:hover .products-hero-image {
+    transform: scale(1.015);
+}
+
+
+/* =========================================
+   DARK MODE — PRODUCTS HERO
+   Existing theme class: body.dark
+========================================= */
+
+body.dark .products-hero,
+body.dark[data-active="products"] {
+    background: #211914 !important;
+    color: #FFF8F0 !important;
+}
+
+body.dark .products-hero-content h1 {
+    color: #FFF8F0 !important;
+}
+
+body.dark .products-hero-content h1 span {
+    color: #C96F50 !important;
+}
+
+body.dark .products-hero-content > p {
+    color: #D2C0B4 !important;
+}
+
+body.dark .products-hero-categories {
+    border-color: rgba(255, 248, 240, .17) !important;
+}
+
+body.dark .products-hero-categories a {
+    color: #FFF0E4 !important;
+}
+
+body.dark .products-hero-categories a span {
+    color: #C96F50 !important;
+}
+
+body.dark .products-hero-categories a:hover {
+    color: #C96F50 !important;
+}
+
+body.dark .products-hero-secondary {
+    background: transparent !important;
+    border-color: #C96F50 !important;
+    color: #FFF8F0 !important;
+}
+
+body.dark .products-hero-secondary:hover {
+    background: #C96F50 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .products-hero-image-wrap {
+    background: #30231C !important;
+}
+
+body.dark .products-hero-image-label {
+    background: #30231C !important;
+    color: #FFF8F0 !important;
+}
+
+body.dark .products-hero-image-label strong {
+    color: #FFF8F0 !important;
+}
+
+body.dark .products-hero-image-label span {
+    color: #C96F50 !important;
+}
+
+body.dark .products-hero-decoration {
+    border-color: #C96F50 !important;
+}
+
+body.dark .products-hero-side-note,
+body.dark .products-hero-scroll {
+    color: #C96F50 !important;
+}
+
+
+/* =========================================
+   DARK MODE — PRODUCTS INTRO AND FILTERS
+========================================= */
+
+body.dark .page-intro,
+body.dark .products-section {
+    background: #211914 !important;
+}
+
+body.dark .page-intro h1 {
+    color: #FFF8F0 !important;
+}
+
+body.dark .page-intro p {
+    color: #D2C0B4 !important;
+}
+
+body.dark .filter-btn {
+    background: transparent !important;
+    border-color: rgba(255, 248, 240, .2) !important;
+    color: #EADBD0 !important;
+}
+
+body.dark .filter-btn.active {
+    background: linear-gradient(
+        110deg,
+        #C96F50 0%,
+        #A6533D 55%,
+        #793E2E 100%
+    ) !important;
+
+    border-color: transparent !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .filter-btn:hover:not(.active) {
+    border-color: #C96F50 !important;
+    color: #C96F50 !important;
+}
+
+
+/* =========================================
+   DARK MODE — PRODUCT CARDS
+========================================= */
+
+body.dark .product-card {
+    background: #30231C !important;
+    border-color: rgba(255, 248, 240, .12) !important;
+}
+
+body.dark .product-card h3 {
+    color: #FFF0E4 !important;
+}
+
+body.dark .product-card .description {
+    color: #D2C0B4 !important;
+}
+
+body.dark .product-card .product-meta {
+    color: #C96F50 !important;
+}
+
+
+/* =========================================
+   DARK MODE — CUSTOM CAKE CTA
+========================================= */
+
+body.dark .footer-cta {
+    background: #30231C !important;
+}
+
+body.dark .footer-cta h2 {
+    color: #FFF8F0 !important;
+}
+
+body.dark .footer-cta p {
+    color: #D2C0B4 !important;
+}
+
+
+/* =========================================
+   DARK MODE FALLBACK
+   Supports body.dark-mode if used elsewhere
+========================================= */
+
+body.dark-mode .products-hero,
+body.dark-mode .page-intro,
+body.dark-mode .products-section {
+    background: #211914 !important;
+}
+
+body.dark-mode .products-hero-content h1,
+body.dark-mode .page-intro h1 {
+    color: #FFF8F0 !important;
+}
+
+body.dark-mode .products-hero-content h1 span {
+    color: #C96F50 !important;
+}
+
+body.dark-mode .products-hero-content > p,
+body.dark-mode .page-intro p {
+    color: #D2C0B4 !important;
+}
+
+body.dark-mode .product-card {
+    background: #30231C !important;
+}
+
+body.dark-mode .product-card h3,
+body.dark-mode .products-hero-image-label strong {
+    color: #FFF8F0 !important;
+}
+
+
+/* =========================================
+   MOBILE IMAGE
+========================================= */
+
+@media (max-width: 760px) {
+    .products-hero-image-wrap {
+        aspect-ratio: 1.2 / 1;
+        height: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .products-hero-image-wrap {
+        aspect-ratio: 1 / 1;
+    }
+}
+
+
+/* =========================================
+   PRODUCTS HERO IMAGE — FINAL FIX
+   Image fitted inside frame, no outer border
+========================================= */
+
+.products-hero-visual {
+    position: relative;
+    width: 100%;
+    max-width: 680px;
+    justify-self: end;
+}
+
+.products-hero-image-wrap {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: min(68vh, 650px);
+    min-height: 420px;
+    overflow: hidden;
+    border: none !important;
+    outline: none !important;
+    border-radius: 25px;
+    background: transparent;
+}
+
+.products-hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: none !important;
+    outline: none !important;
+    border-radius: inherit;
+}
+
+/* Remove the extra decorative border */
+.products-hero-decoration {
+    display: none !important;
+}
+
+/* Keep the label inside the image */
+.products-hero-image-label {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    z-index: 2;
+}
+
+/* Dark mode */
+body.dark .products-hero-image-wrap,
+body.dark-mode .products-hero-image-wrap {
+    background: transparent !important;
+}
+
+/* RTL */
+[dir="rtl"] .products-hero-image-label {
+    left: auto;
+    right: 25px;
+}
+
+/* Tablet */
+@media (max-width: 760px) {
+    .products-hero-image-wrap {
+        height: auto;
+        aspect-ratio: 1.2 / 1;
+        min-height: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+    .products-hero-image-wrap {
+        aspect-ratio: 1 / 1;
+        border-radius: 19px;
+    }
+
+    .products-hero-image-label {
+        left: 13px;
+        right: auto;
+        bottom: 13px;
+    }
+
+    [dir="rtl"] .products-hero-image-label {
+        left: auto;
+        right: 13px;
+    }
+}
+/* Secondary button arrow alignment */
+.products-hero-secondary {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.products-hero-secondary svg {
+    display: block;
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    flex-shrink: 0;
+    color: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.products-hero-secondary:hover svg {
+    transform: translate(3px, -3px);
+}
+.products-page {
+    padding: 90px 7%;
+    background: var(--cream, #fffaf3);
+}
+
+.products-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-subtitle {
+    color: #b66b50;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.products-heading h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(32px, 4vw, 48px);
+    color: var(--text-color, #49352e);
+    margin: 12px 0;
+}
+
+.products-heading p {
+    color: var(--text-muted, #806f65);
+}
+
+.product-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.category-btn {
+    padding: 11px 25px;
+    border: 1px solid #b66b50;
+    border-radius: 30px;
+    background: transparent;
+    color: var(--text-color, #49352e);
+    cursor: pointer;
+    transition: 0.3s ease;
+    font: inherit;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: #b66b50;
+    color: #fff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.product-card {
+    background: var(--card-bg, #fff);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(70, 45, 35, 0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-info span {
+    color: #b66b50;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.product-info h3 {
+    font-family: "Playfair Display", serif;
+    color: var(--text-color, #49352e);
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.product-info p {
+    color: var(--text-color, #49352e);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.product-info a {
+    color: #b66b50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.product-info a:hover {
+    color: #81503d;
+}
+
+.product-card.hidden {
+    display: none;
+}
+
+/* Dark mode */
+body.dark-mode .products-page {
+    background: var(--cream, #211d1b);
+}
+
+body.dark-mode .product-card {
+    background: var(--card-bg, #302925);
+}
+
+body.dark-mode .products-heading h1,
+body.dark-mode .product-info h3,
+body.dark-mode .product-info p,
+body.dark-mode .category-btn {
+    color: var(--text-color, #f5e9df);
+}
+
+body.dark-mode .category-btn.active,
+body.dark-mode .category-btn:hover {
+    background: #b66b50;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .products-page {
+        padding: 60px 5%;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 240px;
+    }
+}
+
+/* =================================
+   PRODUCTS PAGE
+================================= */
+
+.products-page {
+    padding: 90px 7%;
+    background: #fff8f0;
+}
+
+.products-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* Section subtitle - Baked with Love */
+.section-subtitle {
+    color: #C96F50;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.products-heading h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(32px, 4vw, 48px);
+    color: #493126;
+    margin: 12px 0;
+}
+
+.products-heading p {
+    color: #806b5e;
+}
+
+/* CATEGORY FILTERS */
+
+.product-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.category-btn {
+    padding: 11px 25px;
+    border: 1px solid #c96f50;
+    border-radius: 30px;
+    background: transparent;
+    color: #493126;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font: inherit;
+}
+
+/* Same gradient as Order a Cake button */
+.category-btn:hover,
+.category-btn.active {
+    background: linear-gradient(110deg, #c96f50, #82422f);
+    color: #fff;
+    border-color: transparent;
+}
+
+/* PRODUCTS GRID */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(70, 45, 35, 0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-info span {
+    color: #C96F50;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.product-info h3 {
+    font-family: "Playfair Display", serif;
+    color: #493126;
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.product-info p {
+    color: #493126;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.product-info a {
+    color: #c96f50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.product-info a:hover {
+    color: #82422f;
+}
+
+.product-card.hidden {
+    display: none;
+}
+
+/* DARK MODE */
+
+body.dark-mode .products-page {
+    background: #211d1b;
+}
+
+body.dark-mode .product-card {
+    background: #302925;
+}
+
+body.dark-mode .products-heading h1,
+body.dark-mode .product-info h3,
+body.dark-mode .product-info p,
+body.dark-mode .category-btn {
+    color: #f5e9df;
+}
+
+body.dark-mode .products-heading p {
+    color: #d0bfb3;
+}
+
+body.dark-mode .category-btn {
+    border-color: #c96f50;
+}
+
+body.dark-mode .category-btn.active,
+body.dark-mode .category-btn:hover {
+    background: linear-gradient(110deg, #c96f50, #82422f);
+    color: #fff;
+    border-color: transparent;
+}
+
+body.dark-mode .product-info a {
+    color: #e18a6b;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .products-page {
+        padding: 60px 5%;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 240px;
+    }
+}
+
+/* =====================================
+   PRODUCTS SECTION - LIGHT MODE
+===================================== */
+
+section.products-page {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: #fff8f0;
+    transition: background 0.3s ease;
+}
+
+/* =====================================
+   PRODUCTS SECTION - DARK MODE
+===================================== */
+
+body.dark-mode section.products-page {
+    background: #211a17 !important;
+    background-color: #211a17 !important;
+    background-image: none !important;
+    color: #f5e9df;
+}
+
+/* Heading background and text */
+
+body.dark-mode section.products-page .products-heading {
+    background: transparent !important;
+}
+
+body.dark-mode section.products-page .products-heading h1 {
+    color: #f5e9df !important;
+}
+
+body.dark-mode section.products-page .products-heading p {
+    color: #d0bfb3 !important;
+}
+
+body.dark-mode section.products-page .section-subtitle {
+    color: #d87555 !important;
+}
+
+/* Category filter area */
+
+body.dark-mode section.products-page .product-categories {
+    background: transparent !important;
+}
+
+body.dark-mode section.products-page .category-btn {
+    background: transparent;
+    color: #f5e9df !important;
+    border-color: #c96f50;
+}
+
+body.dark-mode section.products-page .category-btn.active,
+body.dark-mode section.products-page .category-btn:hover {
+    background: linear-gradient(110deg, #c96f50, #82422f) !important;
+    color: #ffffff !important;
+    border-color: transparent;
+}
+
+/* Products grid background */
+
+body.dark-mode section.products-page .products-grid {
+    background: transparent !important;
+}
+
+/* Product cards */
+
+body.dark-mode section.products-page .product-card {
+    background: #302621 !important;
+    border-color: #49372e;
+}
+
+body.dark-mode section.products-page .product-info {
+    background: #302621 !important;
+}
+
+body.dark-mode section.products-page .product-info h3,
+body.dark-mode section.products-page .product-info p {
+    color: #f5e9df !important;
+}
+
+body.dark-mode section.products-page .product-info span,
+body.dark-mode section.products-page .product-info a {
+    color: #e18a6b !important;
+}
+/* =====================================
+   SHARED COLLECTION STYLING
+===================================== */
+
+.collection-section {
+    padding: 85px 8%;
+    background: #fff8f1;
+    color: #50372b;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.collection-section h2,
+.collection-section h3 {
+    font-family: 'Playfair Display', serif;
+    color: #50372b;
+}
+
+.collection-section h2 {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 18px;
+}
+
+.collection-section p {
+    color: #806b60;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.collection-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 27px;
+    border-radius: 50px;
+    background: linear-gradient(110deg, #C96F50, #793E2E);
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.collection-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(135, 67, 47, 0.18);
+}
+
+.collection-section img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+
+/* =====================================
+   1. PASTRIES SECTION
+===================================== */
+
+.pastry-collection {
+    border-top: 1px solid #f0d9ca;
+}
+
+.collection-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.collection-image {
+    height: 530px;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.collection-image img {
+    object-position: center;
+}
+
+.collection-image:hover img {
+    transform: scale(1.04);
+}
+
+.collection-content {
+    max-width: 520px;
+}
+
+.collection-description {
+    max-width: 440px;
+    margin-bottom: 28px;
+}
+
+.collection-list {
+    margin: 25px 0 30px;
+    border-top: 1px solid #ecd9cc;
+}
+
+.collection-list a {
+    display: grid;
+    grid-template-columns: 35px 1fr 20px;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 5px;
+    border-bottom: 1px solid #ecd9cc;
+    color: #50372b;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.collection-list a span:first-child {
+    color: #c96f50;
+    font-size: 12px;
+}
+
+.collection-list a span:last-child {
+    color: #c96f50;
+    transition: 0.3s ease;
+}
+
+.collection-list a:hover {
+    padding-left: 12px;
+    color: #c96f50;
+}
+
+.collection-list a:hover span:last-child {
+    transform: translate(3px, -3px);
+}
+
+
+/* =====================================
+   2. CAKES SECTION
+===================================== */
+
+.cake-collection {
+    background: #f9eee5;
+    border-top: 1px solid #f0d9ca;
+}
+
+.cake-heading {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 42px;
+}
+
+.cake-heading p {
+    margin: 0 auto;
+}
+
+.cake-feature {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    max-width: 1250px;
+    margin: auto;
+    background: #fff8f1;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.cake-feature-image {
+    height: 390px;
+    overflow: hidden;
+}
+
+.cake-feature-image:hover img {
+    transform: scale(1.04);
+}
+
+.cake-feature-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 45px 55px;
+}
+
+.cake-small-label {
+    color: #c96f50;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.cake-feature-content h3 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0 0 12px;
+}
+
+.cake-feature-content p {
+    margin: 0 0 25px;
+    max-width: 390px;
+}
+
+.celebration-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1250px;
+    margin: 35px auto 0;
+}
+
+.celebration-card {
+    position: relative;
+    display: block;
+    background: #fff8f1;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.celebration-card img {
+    height: 230px;
+}
+
+.celebration-card:hover img {
+    transform: scale(1.04);
+}
+
+.celebration-card > div {
+    padding: 20px 22px 24px;
+}
+
+.celebration-card h3 {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 7px;
+}
+
+.celebration-card p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.celebration-arrow {
+    position: absolute;
+    right: 20px;
+    bottom: 24px;
+    color: #c96f50;
+    font-size: 19px;
+}
+
+
+/* =====================================
+   3. BREADS SECTION
+===================================== */
+
+.bread-collection {
+    border-top: 1px solid #f0d9ca;
+}
+
+.bread-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+    max-width: 1250px;
+    margin: 0 auto 38px;
+}
+
+.bread-heading > div {
+    max-width: 570px;
+}
+
+.bread-heading p {
+    margin-bottom: 0;
+}
+
+.bread-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.bread-card {
+    display: block;
+    text-decoration: none;
+    color: #50372b;
+}
+
+.bread-image {
+    height: 310px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.bread-card:hover img {
+    transform: scale(1.05);
+}
+
+.bread-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 4px;
+    border-bottom: 1px solid #ecd9cc;
+}
+
+.bread-info h3 {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 5px;
+}
+
+.bread-info p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.bread-info > span {
+    color: #c96f50;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.bread-card:hover .bread-info > span {
+    transform: translate(3px, -3px);
+}
+
+
+/* =====================================
+   DARK MODE
+===================================== */
+
+body.dark-mode .collection-section {
+    background: #211a17;
+    color: #f6e9df;
+    border-color: #49362d;
+}
+
+body.dark-mode .cake-collection {
+    background: #291f1b;
+}
+
+body.dark-mode .collection-section h2,
+body.dark-mode .collection-section h3,
+body.dark-mode .collection-list a,
+body.dark-mode .bread-card {
+    color: #f6e9df;
+}
+
+body.dark-mode .collection-section p {
+    color: #c6b3a7;
+}
+
+body.dark-mode .collection-list,
+body.dark-mode .collection-list a,
+body.dark-mode .bread-info {
+    border-color: #49362d;
+}
+
+body.dark-mode .cake-feature,
+body.dark-mode .celebration-card {
+    background: #30231e;
+}
+
+body.dark-mode .collection-list a:hover {
+    color: #e18a6b;
+}
+
+body.dark-mode .collection-list a span,
+body.dark-mode .celebration-arrow,
+body.dark-mode .bread-info > span {
+    color: #e18a6b;
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 900px) {
+    .collection-inner {
+        gap: 35px;
+    }
+
+    .collection-image {
+        height: 440px;
+    }
+
+    .cake-feature {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cake-feature-content {
+        padding: 30px;
+    }
+
+    .celebration-grid,
+    .bread-grid {
+        gap: 16px;
+    }
+
+    .bread-image {
+        height: 240px;
+    }
+}
+
+@media (max-width: 650px) {
+    .collection-section {
+        padding: 60px 6%;
+    }
+
+    .collection-section h2 {
+        font-size: 30px;
+    }
+
+    .collection-inner,
+    .cake-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-image {
+        height: 330px;
+    }
+
+    .cake-feature-image {
+        height: 280px;
+    }
+
+    .cake-feature-content {
+        padding: 30px 25px;
+    }
+
+    .celebration-grid,
+    .bread-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .celebration-card img {
+        height: 260px;
+    }
+
+    .bread-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .bread-image {
+        height: 280px;
+    }
+}
+/* =====================================
+   PRODUCTS PAGE CTA
+===================================== */
+
+.products-cta {
+    padding: 75px 8%;
+    background: #f9eee5;
+    text-align: center;
+    border-top: 1px solid #f0d9ca;
+}
+
+.products-cta-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.products-cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #50372b;
+    margin: 0 0 15px;
+}
+
+.products-cta p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #806b60;
+    max-width: 580px;
+    margin: 0 auto 28px;
+}
+
+.products-cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+/* PRIMARY BUTTON */
+
+.products-cta-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 27px;
+    border-radius: 50px;
+    background: linear-gradient(110deg, #C96F50, #793E2E);
+    color: #fff !important;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.products-cta-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(135, 67, 47, 0.2);
+}
+
+/* SECONDARY BUTTON */
+
+.products-cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 26px;
+    border: 1px solid #c96f50;
+    border-radius: 50px;
+    background: transparent;
+    color: #50372b !important;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.products-cta-secondary:hover {
+    background: #c96f50;
+    color: #fff !important;
+}
+
+/* DARK MODE */
+
+body.dark-mode .products-cta {
+    background: #291f1b;
+    border-color: #49362d;
+}
+
+body.dark-mode .products-cta h2 {
+    color: #f6e9df;
+}
+
+body.dark-mode .products-cta p {
+    color: #c6b3a7;
+}
+
+body.dark-mode .products-cta-secondary {
+    color: #f6e9df !important;
+    border-color: #C96F50;
+}
+
+body.dark-mode .products-cta-secondary:hover {
+    background: #c96f50;
+    color: #fff !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .products-cta {
+        padding: 55px 6%;
+    }
+
+    .products-cta h2 {
+        font-size: 29px;
+    }
+
+    .products-cta-buttons {
+        flex-direction: column;
+    }
+
+    .products-cta-buttons a {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* =========================================
+   PRODUCTS PAGE — COMPLETE DARK MODE
+========================================= */
+
+/* 2nd SECTION — BAKED WITH LOVE */
+body.dark .products-page {
+    background: #201A16 !important;
+}
+
+body.dark .products-page .products-heading h1,
+body.dark .products-page .products-heading h2 {
+    color: #F7EEE4 !important;
+}
+
+body.dark .products-page .products-heading p {
+    color: #C8B7A8 !important;
+}
+
+body.dark .products-page .section-subtitle {
+    color: #C96F50 !important;
+}
+
+body.dark .product-categories .category-btn {
+    background: transparent !important;
+    border-color: rgba(197, 138, 98, .4) !important;
+    color: #EADBD0 !important;
+}
+
+body.dark .product-categories .category-btn.active,
+body.dark .product-categories .category-btn:hover {
+    background: #C96F50 !important;
+    border-color: #C96F50 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .product-card {
+    background: #2B211B !important;
+    border-color: rgba(197, 138, 98, .2) !important;
+}
+
+body.dark .product-card h3 {
+    color: #F7EEE4 !important;
+}
+
+body.dark .product-card p {
+    color: #C8B7A8 !important;
+}
+
+body.dark .product-card .product-info > span {
+    color: #C96F50 !important;
+}
+
+body.dark .product-card a {
+    color: #C96F50 !important;
+}
+
+
+/* 3rd, 4th AND 5th SECTIONS */
+body.dark .collection-section {
+    background: #201A16 !important;
+}
+
+body.dark .collection-section .products-heading h1,
+body.dark .collection-section .products-heading h2,
+body.dark .collection-section h2,
+body.dark .collection-section h3 {
+    color: #F7EEE4 !important;
+}
+
+body.dark .collection-section .section-subtitle,
+body.dark .collection-section .cake-small-label {
+    color: #C96F50 !important;
+}
+
+body.dark .collection-section p,
+body.dark .collection-description {
+    color: #C8B7A8 !important;
+}
+
+
+/* ART OF BAKING — PASTRIES */
+body.dark .pastry-collection .collection-content {
+    background: transparent !important;
+}
+
+body.dark .pastry-collection .collection-list a {
+    color: #EADBD0 !important;
+    border-color: rgba(197, 138, 98, .2) !important;
+}
+
+body.dark .pastry-collection .collection-list a span {
+    color: #C96F50 !important;
+}
+
+body.dark .pastry-collection .collection-list a:hover {
+    color: #C96F50 !important;
+}
+
+
+/* BAKED WITH LOVE — CAKES */
+body.dark .cake-collection .cake-feature {
+    background: #2B211B !important;
+    border-color: rgba(197, 138, 98, .2) !important;
+}
+
+body.dark .cake-collection .cake-feature-content {
+    background: #2B211B !important;
+}
+
+body.dark .cake-collection .celebration-card {
+    background: #2B211B !important;
+    border-color: rgba(197, 138, 98, .2) !important;
+}
+
+body.dark .cake-collection .celebration-card h3 {
+    color: #F7EEE4 !important;
+}
+
+body.dark .cake-collection .celebration-card p {
+    color: #C8B7A8 !important;
+}
+
+
+/* FRESH FROM OUR OVEN — BREADS */
+body.dark .bread-collection .bread-card {
+    background: #2B211B !important;
+    border-color: rgba(197, 138, 98, .2) !important;
+}
+
+body.dark .bread-collection .bread-info h3 {
+    color: #F7EEE4 !important;
+}
+
+body.dark .bread-collection .bread-info p {
+    color: #C8B7A8 !important;
+}
+
+body.dark .bread-collection .bread-info > span {
+    color: #C96F50 !important;
+}
+
+
+/* COLLECTION BUTTONS */
+body.dark .collection-section .collection-btn {
+    background: transparent !important;
+    border: 1px solid #C96F50 !important;
+    color: #C96F50 !important;
+}
+
+body.dark .collection-section .collection-btn:hover {
+    background: #C96F50 !important;
+    color: #FFFFFF !important;
+}
+
+
+/* FINAL PRODUCTS PAGE CTA */
+body.dark .products-cta {
+    background: #2B211B !important;
+}
+
+body.dark .products-cta-content h2 {
+    color: #F7EEE4 !important;
+}
+
+body.dark .products-cta-content p {
+    color: #C8B7A8 !important;
+}
+
+body.dark .products-cta-primary {
+    background: #C96F50 !important;
+    border-color: #C96F50 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .products-cta-secondary {
+    background: transparent !important;
+    border-color: #C96F50 !important;
+    color: #C96F50 !important;
+}
+
+body.dark .products-cta-secondary:hover {
+    background: #C96F50 !important;
+    color: #FFFFFF !important;
+}
+/* PRODUCTS PAGE — REMOVE DARK MODE SECTION DIVIDERS */
+
+body.dark .products-page,
+body.dark .collection-section,
+body.dark .pastry-collection,
+body.dark .cake-collection,
+body.dark .bread-collection,
+body.dark .products-cta {
+    background: #201A16 !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove divider lines between collection sections */
+body.dark .collection-section::before,
+body.dark .collection-section::after,
+body.dark .products-page::before,
+body.dark .products-page::after,
+body.dark .products-cta::before,
+body.dark .products-cta::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Keep individual cards visually distinct */
+body.dark .product-card,
+body.dark .cake-feature,
+body.dark .celebration-card,
+body.dark .bread-card {
+    background: #2B211B !important;
+}
+
+/* Buttercup collection SVG arrows */
+
+.collection-list a {
+    color: #493226;
+}
+
+.collection-list a .collection-arrow {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    color: #C96F50;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.collection-list a:hover .collection-arrow {
+    color: #793E2E;
+    transform: translate(3px, -3px);
+}
+
+.collection-btn .collection-arrow {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    color: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.collection-btn:hover .collection-arrow {
+    transform: translate(3px, -3px);
+}
+
+body.dark .collection-list a {
+    color: #FFFFFF;
+}
+
+body.dark .collection-list a .collection-arrow {
+    color: #C96F50;
+}
+/* =========================================
+   PRODUCTS PAGE CTA — FINAL COLOUR UPDATE
+========================================= */
+
+/* Light theme */
+.products-cta {
+    background: #493226 !important;
+    border-color: #493226 !important;
+}
+
+/* Small CTA label */
+.products-cta .section-subtitle,
+.products-cta .eyebrow {
+    color: #C96F50 !important;
+}
+
+/* Request a Custom Cake heading */
+.products-cta h2 {
+    color: #C96F50 !important;
+}
+
+/* Dark theme */
+body.dark .products-cta,
+body.dark-mode .products-cta {
+    background: #493226 !important;
+    border-color: #493226 !important;
+}
+
+body.dark .products-cta .section-subtitle,
+body.dark .products-cta .eyebrow,
+body.dark .products-cta h2,
+body.dark-mode .products-cta .section-subtitle,
+body.dark-mode .products-cta .eyebrow,
+body.dark-mode .products-cta h2 {
+    color: #FFFFFF !important;
+}
+/* Products CTA – Secondary Button Text */
+.products-cta .products-cta-secondary {
+    color: #FFFFFF !important;
+}
+
+/* Keep text white on hover */
+.products-cta .products-cta-secondary:hover {
+    color: #FFFFFF !important;
+}
+
+/* Dark theme */
+body.dark .products-cta .products-cta-secondary,
+body.dark-mode .products-cta .products-cta-secondary {
+    color: #FFFFFF !important;
+}
+
+/* ==========================================
+   PRODUCTS PAGE – MATCH GLOBAL HEADING STYLE
+========================================== */
+
+/* Main hero heading */
+body[data-active="products"] .products-hero-content h1 {
+    font-size: clamp(36px, 4vw, 48px) !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+    color: var(--primary) !important;
+}
+
+/* Main collection heading */
+body[data-active="products"] .products-heading h1 {
+    font-size: clamp(32px, 3.5vw, 42px) !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+    color: var(--primary) !important;
+}
+
+/* Section headings */
+body[data-active="products"] .collection-section h2,
+body[data-active="products"] .cake-heading h2,
+body[data-active="products"] .bread-heading h2,
+body[data-active="products"] .products-cta-content h2 {
+    font-size: clamp(28px, 3vw, 36px) !important;
+    line-height: 1.25 !important;
+    font-weight: 600 !important;
+    color: var(--primary) !important;
+}
+
+/* Card and subsection headings */
+body[data-active="products"] .product-info h3,
+body[data-active="products"] .cake-feature-content h3,
+body[data-active="products"] .celebration-card h3,
+body[data-active="products"] .bread-info h3 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    color: var(--primary) !important;
+}
+
+/* Second heading colour */
+body[data-active="products"] .products-hero-content h1 span,
+body[data-active="products"] .products-heading h1 span,
+body[data-active="products"] .collection-section h2 span,
+body[data-active="products"] .cake-heading h2 span,
+body[data-active="products"] .bread-heading h2 span,
+body[data-active="products"] .products-cta-content h2 span,
+body[data-active="products"] .product-info h3 span,
+body[data-active="products"] .cake-feature-content h3 span,
+body[data-active="products"] .celebration-card h3 span,
+body[data-active="products"] .bread-info h3 span {
+    color: var(--secondary) !important;
+    -webkit-text-fill-color: var(--secondary) !important;
+}
+
+/* Dark mode */
+body.dark-mode[data-active="products"] .products-hero-content h1,
+body.dark-mode[data-active="products"] .products-heading h1,
+body.dark-mode[data-active="products"] .collection-section h2,
+body.dark-mode[data-active="products"] .cake-heading h2,
+body.dark-mode[data-active="products"] .bread-heading h2,
+body.dark-mode[data-active="products"] .products-cta-content h2,
+body.dark-mode[data-active="products"] .product-info h3,
+body.dark-mode[data-active="products"] .cake-feature-content h3,
+body.dark-mode[data-active="products"] .celebration-card h3,
+body.dark-mode[data-active="products"] .bread-info h3 {
+    color: var(--primary) !important;
+}
+
+/* Keep highlighted text in secondary colour in dark mode */
+body.dark-mode[data-active="products"] .products-hero-content h1 span,
+body.dark-mode[data-active="products"] .products-heading h1 span,
+body.dark-mode[data-active="products"] .collection-section h2 span,
+body.dark-mode[data-active="products"] .cake-heading h2 span,
+body.dark-mode[data-active="products"] .bread-heading h2 span,
+body.dark-mode[data-active="products"] .products-cta-content h2 span {
+    color: var(--secondary) !important;
+}
+/* Left-align all five pastry names */
+.pastry-collection .collection-list a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 12px;
+}
+
+.pastry-collection .collection-list a span:first-child {
+    width: 30px;
+    flex-shrink: 0;
+}
+
+.pastry-collection .collection-list a span:last-child {
+    margin-left: auto;
+}
+/* Center pastry names and arrows */
+.pastry-collection .collection-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
+
+.pastry-collection .collection-list a span:first-child {
+    width: auto;
+    margin: 0;
+}
+
+.pastry-collection .collection-list a span:last-child {
+    margin-left: 0;
+}
+/* PRODUCTS PAGE – DARK MODE HEADING VISIBILITY */
+body.dark .products-page .products-heading h1,
+body.dark .products-page .products-heading h2,
+body.dark .products-cta .products-cta-content h2 {
+    color: #ffffff !important;
+}
+
+/* Keep CTA paragraph and button text unchanged */
+body.dark .products-cta .products-cta-content p {
+    color: inherit;
+}
+/* PRODUCTS PAGE – ONLY PRIMARY HEADING TEXT WHITE IN DARK MODE */
+
+body.dark[data-active="products"] .products-hero-content h1,
+body.dark-mode[data-active="products"] .products-hero-content h1,
+
+body.dark[data-active="products"] .products-heading h1,
+body.dark-mode[data-active="products"] .products-heading h1,
+
+body.dark[data-active="products"] .collection-section h2,
+body.dark-mode[data-active="products"] .collection-section h2,
+
+body.dark[data-active="products"] .cake-heading h2,
+body.dark-mode[data-active="products"] .cake-heading h2,
+
+body.dark[data-active="products"] .cake-feature-content h3,
+body.dark-mode[data-active="products"] .cake-feature-content h3,
+
+body.dark[data-active="products"] .celebration-card h3,
+body.dark-mode[data-active="products"] .celebration-card h3,
+
+body.dark[data-active="products"] .bread-heading h2,
+body.dark-mode[data-active="products"] .bread-heading h2,
+
+body.dark[data-active="products"] .bread-info h3,
+body.dark-mode[data-active="products"] .bread-info h3,
+
+body.dark[data-active="products"] .product-info h3,
+body.dark-mode[data-active="products"] .product-info h3,
+
+body.dark[data-active="products"] .products-cta-content h2,
+body.dark-mode[data-active="products"] .products-cta-content h2 {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+}
+
+/* Keep secondary-colored heading spans unchanged */
+body.dark[data-active="products"] .products-hero-content h1 span,
+body.dark-mode[data-active="products"] .products-hero-content h1 span,
+
+body.dark[data-active="products"] .products-heading h1 span,
+body.dark-mode[data-active="products"] .products-heading h1 span,
+
+body.dark[data-active="products"] .collection-section h2 span,
+body.dark-mode[data-active="products"] .collection-section h2 span,
+
+body.dark[data-active="products"] .cake-heading h2 span,
+body.dark-mode[data-active="products"] .cake-heading h2 span,
+
+body.dark[data-active="products"] .cake-feature-content h3 span,
+body.dark-mode[data-active="products"] .cake-feature-content h3 span,
+
+body.dark[data-active="products"] .products-cta-content h2 span,
+body.dark-mode[data-active="products"] .products-cta-content h2 span {
+    color: var(--secondary) !important;
+    -webkit-text-fill-color: var(--secondary) !important;
+}
+/* PRODUCTS CTA – LIGHT MODE */
+body[data-active="products"] .products-cta-content h2,
+body[data-active="products"] .products-cta-content h2 span {
+    color: var(--secondary) !important;
+    -webkit-text-fill-color: var(--secondary) !important;
+}

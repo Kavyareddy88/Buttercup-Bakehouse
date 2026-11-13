@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details | Buttercup Bakehouse</title>
+    <meta name="description" content="Discover the details of our freshly baked treats at Buttercup Bakehouse.">
+    <meta name="theme-color" content="#493226">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/product-details.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    <link rel="stylesheet" href="../assets/css/buttercup-premium.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="../assets/images/logo/logoo.jpg">
+
+    <script src="../assets/js/main.js" defer></script>
+</head>
+
+<body id="top" data-active="products">
+
+    <!-- HEADER - SAME AS PRODUCTS PAGE -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a class="brand" href="index.html" aria-label="Buttercup Bakehouse home">
+                <img class="brand-logo"
+                     src="../assets/images/logo/logoo.jpg"
+                     alt="">
+
+                <span class="brand-name">
+                    Buttercup
+                    <small>BAKEHOUSE</small>
+                </span>
+            </a>
+
+            <button class="icon-btn menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation"
+                    aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+
+                <div class="home-dropdown">
+                    <button
+                        class="home-dropdown-trigger "
+                        id="homeDropdownToggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="homeDropdownMenu">
+
+                        <span>Home</span>
+
+                        <span class="home-dropdown-arrow" aria-hidden="true">
+                            <svg viewBox="0 0 16 16" width="13" height="13">
+                                <path d="M3.5 5.5 8 10l4.5-4.5"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="1.8"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="home-dropdown-menu" id="homeDropdownMenu">
+                        <a href="index.html">Home – Classic</a>
+                        <a href="home2.html">Home – Premium</a>
+                    </div>
+                </div>
+
+                <a data-nav="about" href="about.html">About</a>
+                <a data-nav="products" href="products.html">Products</a>
+                <a data-nav="custom" href="custom-orders.html">Custom Cakes</a>
+                <a data-nav="blog" href="blog.html">Blog</a>
+                <a data-nav="contact" href="contact.html">Contact</a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="direction-toggle"
+                        id="rtlToggle"
+                        type="button"
+                        aria-label="Switch text direction">
+                    RTL
+                </button>
+
+                <button class="icon-btn theme-toggle"
+                        id="themeToggle"
+                        type="button"
+                        aria-label="Toggle dark mode"
+                        title="Toggle dark mode">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
+
+                <a class="header-order" href="contact.html#contact-form">
+                    Order a Cake
+                    <svg class="about-btn-arrow"
+                         xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         width="17"
+                         height="17"
+                         fill="none"
+                         aria-hidden="true">
+                        <path d="M7 17L17 7M8 7H17V16"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- BREADCRUMB -->
+       
+<!-- PRODUCT BREADCRUMB HERO -->
+<section class="product-breadcrumb-section">
+
+    <div class="product-breadcrumb-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="product-breadcrumb-content">
+
+            <nav class="product-breadcrumb" aria-label="Breadcrumb">
+                
+                
+            </nav>
+
+            
+            <h1>
+                Every bake has
+                <em>a little story.</em>
+            </h1>
+
+            <p>
+                Discover our freshly baked creations, lovingly prepared
+                with quality ingredients and a little touch of sweetness.
+                Find something special for every moment.
+                
+            </p>
+
+            
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="product-breadcrumb-image">
+            <img
+                src="../assets/images/logo/choco.jpg"
+                alt="Freshly baked artisan bakery collection"
+            >
+        </div>
+
+    </div>
+
+</section>
+
+
+
+        <!-- PRODUCT DETAILS -->
+        <section class="product-details-section" id="product-information"></section>
+
+            <div class="product-details-container">
+
+                <div class="product-details-layout">
+
+                    <!-- LEFT: PRODUCT IMAGE -->
+                    <div class="product-gallery">
+
+                        <div class="product-main-image">
+                            <img
+                                id="detailProductImage"
+                                src="../assets/images/logo/chocolate.jpg"
+                                alt="Buttercup Bakehouse product">
+
+                            <span class="product-image-label">
+                                FRESH FROM OUR BAKEHOUSE
+                            </span>
+                        </div>
+
+                        <div class="product-image-caption">
+                            <span>MADE WITH CARE</span>
+                            <p>Little moments, made sweeter.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT: PRODUCT INFORMATION -->
+                    <div class="product-information">
+
+                        <span class="product-category-label" id="detailCategory">
+                            OUR FRESH BAKES
+                        </span>
+
+                        <h1 id="detailProductName">
+                            Chocolate Celebration Cake
+                        </h1>
+
+                        <div class="product-rating-line">
+                            <span class="product-rating-stars">★★★★★</span>
+                            <span>Made fresh with care</span>
+                        </div>
+
+                        <p class="product-detail-description" id="detailDescription">
+                            A deliciously crafted bake made to bring a little
+                            sweetness to your everyday moments and celebrations.
+                        </p>
+
+                        <div class="product-price-block">
+                            <span class="product-price-label">OUR PRICE</span>
+                            <strong id="detailPrice">₹950</strong>
+                            <small id="priceNote">Price may vary depending on your selection.</small>
+                        </div>
+
+                        <div class="product-detail-divider"></div>
+
+                        <!-- PRODUCT HIGHLIGHTS -->
+                        <div class="product-highlights">
+
+                            <div class="product-highlight">
+                                <span class="highlight-number">01</span>
+                                <div>
+                                    <h3>Thoughtfully Prepared</h3>
+                                    <p>Made with attention to every little detail.</p>
+                                </div>
+                            </div>
+
+                            <div class="product-highlight">
+                                <span class="highlight-number">02</span>
+                                <div>
+                                    <h3>Freshly Baked</h3>
+                                    <p>Prepared fresh for a lovely bakery experience.</p>
+                                </div>
+                            </div>
+
+                            <div class="product-highlight">
+                                <span class="highlight-number">03</span>
+                                <div>
+                                    <h3>Made for Sharing</h3>
+                                    <p>A delightful addition to your everyday moments.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- PRODUCT ACTIONS -->
+                        <div class="product-detail-actions">
+
+                            <a href="contact.html"
+                               class="product-primary-btn"
+                               id="productEnquiryBtn">
+
+                                Enquire About This Product
+
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M7 17L17 7M7 7H17V17"/>
+                                </svg>
+                            </a>
+
+                            <a href="products.html"
+                               class="product-secondary-btn">
+
+                                Continue Shopping
+
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M7 17L17 7M7 7H17V17"/>
+                                </svg>
+                            </a>
+
+                        </div>
+
+                        <p class="product-order-note">
+                            Looking for a personalised design?
+                            <a href="custom-orders.html">Explore custom cake orders.</a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCT STORY -->
+        <section class="product-story-section">
+
+            <div class="product-details-container">
+
+                <div class="product-story-content">
+
+                    <div class="product-story-heading">
+                        <span class="product-section-eyebrow">A LITTLE MORE ABOUT IT</span>
+
+                        <h2>
+                            Made with care.
+                            <em>Enjoyed with love.</em>
+                        </h2>
+                    </div>
+
+                    <div class="product-story-text">
+                        <p>
+                            At Buttercup Bakehouse, we believe the little things
+                            make every bake special. From the first preparation
+                            to the final details, we put care into creating
+                            something worth coming back for.
+                        </p>
+
+                        <p>
+                            Whether you're choosing an everyday favourite or
+                            planning a special celebration, we're here to make
+                            your bakery experience a little sweeter.
+                        </p>
+
+                        <a href="products.html" class="product-story-link">
+                            Explore More Bakes
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7 17L17 7M7 7H17V17"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTTOM CTA -->
+        <section class="product-detail-cta">
+
+            <div class="product-details-container">
+
+                <div class="product-cta-content">
+
+                    <span>MADE FOR YOUR LITTLE MOMENTS</span>
+
+                    <h2>
+                        Something special
+                        <em>starts with a little sweetness.</em>
+                    </h2>
+
+                    <p>
+                        Have a celebration coming up or a custom idea in mind?
+                        We'd love to bake something beautiful for you.
+                    </p>
+
+                    <div class="product-cta-buttons">
+
+                        <a href="custom-orders.html" class="product-primary-btn">
+                            Order a Custom Cake
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7 17L17 7M7 7H17V17"/>
+                            </svg>
+                        </a>
+
+                        <a href="contact.html" class="product-secondary-btn">
+                            Get in Touch
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7 17L17 7M7 7H17V17"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER - SAME AS PRODUCTS PAGE -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <!-- BRAND -->
+                <div class="footer-brand">
+
+                    <a class="brand" href="index.html">
+                        <img class="brand-logo"
+                             src="../assets/images/logo/logoo.jpg"
+                             alt="">
+
+                        <span class="brand-name">
+                            Buttercup
+                            <small>BAKEHOUSE</small>
+                        </span>
+                    </a>
+
+                    <p class="footer-tagline">
+                        Baked with love, always
+
+                        <svg class="footer-heart" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+                        </svg>
+                    </p>
+
+                    <p class="footer-description">
+                        Little moments, made sweeter. Thoughtful bakes,
+                        honest ingredients and a warm welcome every day.
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1Z"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle class="social-dot" cx="17.5" cy="6.8" r="1"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M21 8.2a2.8 2.8 0 0 0-2-2C17.2 5.7 12 5.7 12 5.7s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.7 12a29 29 0 0 0 .3 3.8 2.8 2.8 0 0 0 2 2c1.8.5 7 .5 7 .5s5.2 0 7-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .3-3.8Z"/>
+                                <path class="social-play" d="m10 9 5 3-5 3Z"/>
+                            </svg>
+                        </a>
+
+                        <a href="mailto:hello@buttercupbakehouse.example" aria-label="Email">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <path d="m4 7 8 6 8-6"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="X">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M5 4h4l10 16h-4L5 4Zm0 16L19 4M5 4l14 16"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- EXPLORE -->
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Our Story</a>
+                    <a href="products.html">Shop All Bakes</a>
+                    <a href="blog.html">The Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+
+                <!-- FROM THE OVEN -->
+                <div class="footer-col">
+                    <h4>From the Oven</h4>
+                    <a href="products.html?category=cakes">Celebration Cakes</a>
+                    <a href="products.html?category=pastries">Pastries</a>
+                    <a href="products.html?category=breads">Fresh Breads</a>
+                    <a href="custom-orders.html">Custom Orders</a>
+                    <a href="products.html">Seasonal Treats</a>
+                </div>
+
+
+                <!-- VISIT -->
+                <div class="footer-col footer-visit">
+                    <h4>Come Say Hello</h4>
+
+                    <a class="visit-item"
+                       href="https://www.google.com/maps/search/?api=1&query=bakeries+Bengaluru"
+                       target="_blank"
+                       rel="noopener">
+
+                        <span class="visit-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/>
+                                <circle cx="12" cy="9" r="2.5"/>
+                            </svg>
+                        </span>
+
+                        <span>
+                            <b>Find Our Bakery</b>
+                            <small>Bengaluru, Karnataka</small>
+                        </span>
+                    </a>
+
+
+                    <div class="visit-item">
+
+                        <span class="visit-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M12 7v5l3 2"/>
+                            </svg>
+                        </span>
+
+                        <span>
+                            <b>Bakery Hours</b>
+                            <small>Tuesday – Sunday · 8 AM – 7 PM</small>
+                        </span>
+
+                    </div>
+
+
+                    <a class="visit-item"
+                       href="mailto:hello@buttercupbakehouse.example">
+
+                        <span class="visit-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <path d="m4 7 8 6 8-6"/>
+                            </svg>
+                        </span>
+
+                        <span>
+                            <b>Drop Us a Note</b>
+                            <small>hello@buttercupbakehouse.example</small>
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © <span id="year"></span> Buttercup Bakehouse. All rights reserved.
+                </span>
+
+                <span class="footer-legal">
+                    <a href="404.html">Privacy Policy</a>
+                    <i>|</i>
+                    <a href="404.html">Terms &amp; Conditions</a>
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- PRODUCT DATA AND URL HANDLING -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const products = {
+
+            "country-sourdough": {
+                name: "Country Sourdough",
+                category: "Breads",
+                price: "₹280",
+                image: "../assets/images/logo/sour..jpg",
+                description: "A rustic country-style sourdough with a crisp crust and a lovely bakery-fresh finish."
+            },
+
+            "milk-bread": {
+                name: "Japanese Milk Bread",
+                category: "Breads",
+                price: "₹220",
+                image: "../assets/images/logo/milk.jpg",
+                description: "Soft, fluffy Japanese-style milk bread with a delicate texture, perfect for everyday enjoyment."
+            },
+
+            "multigrain-bread": {
+                name: "Multigrain Bread",
+                category: "Breads",
+                price: "₹250",
+                image: "../assets/images/logo/grain.jpg",
+                description: "A wholesome multigrain loaf, thoughtfully baked for your everyday breakfast and sandwiches."
+            },
+
+            "butter-croissant": {
+                name: "Butter Croissant",
+                category: "Pastries",
+                price: "₹140",
+                image: "../assets/images/logo/butter.jpg",
+                description: "A classic bakery favourite with delicate layers and a buttery finish."
+            },
+
+            "chocolate-danish": {
+                name: "Chocolate Danish",
+                category: "Pastries",
+                price: "₹165",
+                image: "../assets/images/logo/choco.jpg",
+                description: "A delicate pastry paired with chocolate for a little moment of indulgence."
+            },
+
+            "strawberry-tart": {
+                name: "Strawberry Tart",
+                category: "Pastries",
+                price: "₹180",
+                image: "../assets/images/logo/straw.jpg",
+                description: "A beautiful bakery tart with a delicate finish, perfect for a sweet treat."
+            },
+
+            "chocolate-cake": {
+                name: "Chocolate Celebration Cake",
+                category: "Cakes",
+                price: "From ₹950",
+                image: "../assets/images/logo/chocolate.jpg",
+                description: "A rich chocolate celebration cake, thoughtfully prepared to make your special moments sweeter."
+            },
+
+            "berry-cake": {
+                name: "Berry Cloud Cake",
+                category: "Cakes",
+                price: "From ₹1,050",
+                image: "../assets/images/logo/cloud.jpg",
+                description: "A delicate celebration cake with a lovely berry-inspired finish."
+            },
+
+            "red-velvet-cake": {
+                name: "Classic Red Velvet Cake",
+                category: "Cakes",
+                price: "From ₹1,100",
+                image: "../assets/images/logo/red.jpg",
+                description: "A beautiful red velvet cake, made for celebrations and memorable moments."
+            }
+
+        };
+
+
+        const params = new URLSearchParams(window.location.search);
+        const productId = params.get("id");
+        const product = products[productId];
+
+        if (!product) {
+            document.getElementById("detailProductName").textContent = "Product Not Found";
+            document.getElementById("detailCategory").textContent = "BUTTERCUP BAKEHOUSE";
+            document.getElementById("detailDescription").textContent =
+                "We couldn't find this product. Please explore our collection to discover more freshly baked favourites.";
+            document.getElementById("detailPrice").textContent = "";
+            document.getElementById("priceNote").textContent = "";
+            document.getElementById("detailProductImage").style.display = "none";
+            document.getElementById("productEnquiryBtn").style.display = "none";
+            document.getElementById("breadcrumbProduct").textContent = "Product Not Found";
+            document.title = "Product Not Found | Buttercup Bakehouse";
+            return;
+        }
+
+        document.getElementById("detailProductName").textContent = product.name;
+        document.getElementById("detailCategory").textContent = product.category.toUpperCase();
+        document.getElementById("detailDescription").textContent = product.description;
+        document.getElementById("detailPrice").textContent = product.price;
+        document.getElementById("detailProductImage").src = product.image;
+        document.getElementById("detailProductImage").alt = product.name;
+        document.getElementById("breadcrumbProduct").textContent = product.name;
+
+        document.title = product.name + " | Buttercup Bakehouse";
+
+        document.getElementById("productEnquiryBtn").href =
+            "contact.html?product=" + encodeURIComponent(product.name);
+
+        if (product.category === "Cakes") {
+            document.getElementById("priceNote").textContent =
+                "Final price depends on cake size and design.";
+        } else {
+            document.getElementById("priceNote").textContent =
+                "Please contact us for availability.";
+        }
+
+    });
+    </script>
+
+</body>
+</html>

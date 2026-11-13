@@ -1,0 +1,30 @@
+
+/* =========================================
+   RTL-SPECIFIC REFINEMENTS
+   Layout direction is applied to the document by main.js.
+========================================= */
+
+/* Hero note positioning */
+[dir="rtl"] .hero-note {
+    left: auto;
+    right: 22px;
+}
+
+
+/* Text link hover direction */
+[dir="rtl"] .text-link:hover span {
+    transform: translateX(-4px);
+}
+
+
+/* Article blockquote border */
+[dir="rtl"] .article-content blockquote {
+    border-inline-start: 0;
+    border-inline-end: 3px solid var(--secondary);
+}
+
+
+/* Main navigation direction */
+[dir="rtl"] .main-nav {
+    direction: rtl;
+}

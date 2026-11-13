@@ -1,0 +1,6 @@
+document.addEventListener("DOMContentLoaded",()=>{
+ const p=products.find(x=>x.id===new URLSearchParams(location.search).get("item"))||products[0];
+ document.title=`${p.name} | Buttercup Bakehouse`;
+ document.getElementById("productDetail").innerHTML=`<div class="detail-main-image"><img src="${p.image}" alt="${p.name}"></div><div class="detail-copy"><span class="tag">${p.tag}</span><div class="eyebrow" style="margin-top:22px">FROM OUR BAKEHOUSE</div><h1>${p.name}</h1><div class="detail-price">$${p.price}</div><p class="lead">${p.description}</p><div class="detail-meta"><div class="meta-box"><small>Made for</small><strong>${p.serves}</strong></div><div class="meta-box"><small>Category</small><strong>${p.category}</strong></div></div><div class="quantity-row"><label for="qty">Quantity</label><input id="qty" type="number" min="1" max="20" value="1"></div><a class="btn" id="orderProduct" href="custom-orders.html?product=${p.id}">Enquire about this bake ↗</a><div class="detail-tabs"><h3>Ingredients & details</h3><p>${p.ingredients}</p><p>Prepared in small batches. Please contact us about allergens before ordering.</p></div></div>`;
+ document.getElementById("relatedProducts").innerHTML=products.filter(x=>x.id!==p.id).slice(0,3).map(productCard).join("");
+});

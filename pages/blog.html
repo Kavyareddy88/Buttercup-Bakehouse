@@ -1,0 +1,839 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Journal | Buttercup Bakehouse</title>
+
+    <meta name="description"
+        content="Read stories, baking notes and inspiration from the Buttercup Bakehouse journal.">
+
+   <meta name="theme-color" content="#493226">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    <link rel="stylesheet" href="../assets/css/buttercup-premium.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="../assets/images/logo/logoo.jpg">
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/blog.js" defer></script>
+</head>
+
+<body id="top" data-active="blog">
+
+    <!-- HEADER -->
+    <!--HEADER-->
+
+  <header class="site-header">
+  <div class="container header-inner">
+
+    <a class="brand" href="index.html" aria-label="Buttercup Bakehouse home">
+      <img class="brand-logo"
+           src="../assets/images/logo/logoo.jpg"
+           alt="">
+
+      <span class="brand-name">
+        Buttercup
+        <small>BAKEHOUSE</small>
+      </span>
+    </a>
+
+    <button class="icon-btn menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+
+      <div class="home-dropdown">
+  <button
+    class="home-dropdown-trigger "
+    id="homeDropdownToggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="homeDropdownMenu"
+  >
+    <span>Home</span>
+  <span class="home-dropdown-arrow" aria-hidden="true">
+  <svg viewBox="0 0 16 16" width="13" height="13">
+    <path d="M3.5 5.5 8 10l4.5-4.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+</span>
+  </button>
+
+  <div class="home-dropdown-menu" id="homeDropdownMenu">
+    <a href="index.html">Home – Classic</a>
+    <a href="home2.html">Home – Premium</a>
+  </div>
+</div>
+
+      <a data-nav="about" href="about.html">About</a>
+      <a data-nav="products" href="products.html">Products</a>
+      <a data-nav="custom" href="custom-orders.html">Custom Cakes</a>
+      <a data-nav="blog" href="blog.html">Blog</a>
+      <a data-nav="contact" href="contact.html">Contact</a>
+
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="direction-toggle"
+              id="rtlToggle"
+              type="button"
+              aria-label="Switch text direction">
+        RTL
+      </button>
+
+      <button class="icon-btn theme-toggle"
+              id="themeToggle"
+              type="button"
+              aria-label="Toggle dark mode"
+              title="Toggle dark mode">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+
+      <a class="header-order" href="contact.html#contact-form">
+        Order a Cake <svg
+    class="about-btn-arrow"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="17"
+    height="17"
+    fill="none"
+    aria-hidden="true"
+  >
+    <path
+      d="M7 17L17 7M8 7H17V16"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+      </a>
+
+    </div>
+  </div>
+</header>
+  
+    <!-- MAIN CONTENT -->
+    <main>
+
+<!-- BLOG HERO SECTION -->
+
+
+<!-- BLOG FULL SCREEN HERO -->
+<section class="blog-hero-banner">
+
+    <div class="blog-hero-overlay"></div>
+
+    <div class="blog-hero-inner">
+
+        
+
+        <h1>
+            A little sweetness,<br>
+            <span>a lot of stories.</span>
+        </h1>
+
+        <p>
+            Behind every beautiful bake is a story worth sharing.
+            Explore our kitchen inspirations, baking secrets and
+            little moments that make life sweeter.
+             
+        </p>
+
+        <div class="blog-hero-buttons">
+
+            <a href="#latest-stories" class="blog-hero-primary">
+                Explore Stories <span><svg
+    class="about-btn-arrow"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="17"
+    height="17"
+    fill="none"
+    aria-hidden="true"
+  >
+    <path
+      d="M7 17L17 7M8 7H17V16"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg></span>
+            </a>
+
+            <a href="#latest-stories" class="blog-hero-secondary">
+                Our Little World <span><svg
+    class="about-btn-arrow"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="17"
+    height="17"
+    fill="none"
+    aria-hidden="true"
+  >
+    <path
+      d="M7 17L17 7M8 7H17V16"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg></span>
+            </a>
+
+        </div>
+
+       
+
+    </div>
+
+    <div class="blog-hero-bottom">
+        <span>BAKED WITH LOVE · SHARED WITH JOY</span>
+        <span>THE BLOG</span>
+    </div>
+
+</section>
+
+
+        
+        
+        
+<main class="blog-page">
+
+    <!-- SECTION 1: BLOG HERO -->
+    
+<!-- A LITTLE TASTE OF OUR WORLD -->
+<section class="blog-world-section">
+
+    <div class="blog-world-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="blog-world-image">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1000"
+                 alt="Freshly baked artisan bread">
+
+            <div class="blog-world-image-label">
+                <span>MADE WITH LOVE</span>
+                <h4>Fresh from our kitchen</h4>
+            </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="blog-world-content">
+
+            <span class="blog-world-eyebrow">
+                MORE THAN JUST BAKING
+            </span>
+
+            <h2>
+                Every bake has
+                <span>a story to tell.</span>
+            </h2>
+
+            <p class="blog-world-description">
+                Behind every golden crust, delicate pastry and
+                beautifully decorated cake is a little creativity,
+                a lot of patience and a whole lot of love.
+                Welcome to our little corner, where we share the
+                stories, inspirations and moments that make
+                baking special.
+            </p>
+
+            <!-- HIGHLIGHTS -->
+            <div class="blog-world-highlights">
+
+                <div class="blog-world-highlight">
+                    <span class="world-number">01</span>
+                    <div>
+                        <h4>Our Inspirations</h4>
+                        <p>The ideas behind our favourite creations.</p>
+                    </div>
+                </div>
+
+                <div class="blog-world-highlight">
+                    <span class="world-number">02</span>
+                    <div>
+                        <h4>Behind the Scenes</h4>
+                        <p>Little moments from our everyday baking.</p>
+                    </div>
+                </div>
+
+                <div class="blog-world-highlight">
+                    <span class="world-number">03</span>
+                    <div>
+                        <h4>Stories Worth Sharing</h4>
+                        <p>Recipes, memories and everything in between.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#latest-stories" class="blog-world-button">
+                Discover Our Stories
+                
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- SECTION 2: FEATURED STORY -->
+    <section class="featured-story">
+        <div class="section-heading">
+            <span class="blog-eyebrow">A STORY WORTH SHARING</span>
+            <h2>Freshly picked <span>for you.</span></h2>
+        </div>
+
+        <div class="featured-story-card">
+            <div class="featured-story-image">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1200"
+                     alt="Fresh golden croissants">
+            </div>
+
+            <div class="featured-story-content">
+                <span class="article-category">OUR BAKERY · 5 MIN READ</span>
+                <h3>The little secrets behind a perfectly flaky croissant</h3>
+                <p>
+                    Golden layers, buttery goodness and a little patience.
+                    Take a peek into the simple details that make every
+                    croissant a special treat.
+                </p>
+                <a href="blog-details.html?id=croissant-secrets" class="blog-read-link">
+    Read the story
+ 
+</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 3: LATEST ARTICLES -->
+    <section class="latest-stories" id="latest-stories">
+
+        <div class="section-heading">
+            <span class="blog-eyebrow">FROM OUR LITTLE WORLD</span>
+            <h2>Latest from the <span>oven.</span></h2>
+            <p>Three little reads to make your day a little sweeter.</p>
+        </div>
+
+        <div class="blog-articles-grid">
+
+            <!-- ARTICLE 1 -->
+<article class="blog-article-card">
+    <div class="article-image">
+        <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=800"
+             alt="Fresh artisan bread">
+        <span class="article-tag">BAKING STORIES</span>
+    </div>
+    <div class="article-content">
+        <span class="article-meta">6 NOVEMBER 2026 · 4 MIN READ</span>
+        <h3>Why freshly baked bread makes every morning better</h3>
+        <p>
+            From the first crackle of the crust to that
+            irresistible aroma, discover the joy of fresh bread.
+        </p>
+        <a href="blog-details.html#article-bread" class="blog-read-link">Read article</a>
+</a>
+
+    </div>
+</article>
+
+<!-- ARTICLE 2 -->
+<article class="blog-article-card">
+    <div class="article-image">
+        <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=800"
+             alt="Beautiful freshly baked cupcakes">
+        <span class="article-tag">SWEET INSPIRATION</span>
+    </div>
+    <div class="article-content">
+        <span class="article-meta">4 NOVEMBER 2026 · 3 MIN READ</span>
+        <h3>Little celebrations deserve something too sweet</h3>
+        <p>
+            Birthdays, reunions or ordinary afternoons.
+            Here's why a little cake makes every moment special.
+        </p>
+        <a href="blog-details.html#article-celebrations" class="blog-read-link">Read article</a>
+
+    </div>
+</article>
+
+<!-- ARTICLE 3 -->
+<article class="blog-article-card">
+    <div class="article-image">
+        <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=800"
+             alt="Freshly baked cookies">
+        <span class="article-tag">KITCHEN NOTES</span>
+    </div>
+    <div class="article-content">
+        <span class="article-meta">1 NOVEMBER 2026 · 5 MIN READ</span>
+        <h3>The magic of simple ingredients and thoughtful baking</h3>
+        <p>
+            Sometimes the most beautiful treats begin with
+            the simplest ingredients and a little extra care.
+        </p>
+        <a href="blog-details.html#article-simple-baking" class="blog-read-link">Read article</a>
+
+
+    </div>
+</article>
+
+<!-- ARTICLE 4 -->
+<article class="blog-article-card">
+    <div class="article-image">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800"
+             alt="Freshly baked croissants">
+        <span class="article-tag">BAKER'S JOURNAL</span>
+    </div>
+    <div class="article-content">
+        <span class="article-meta">29 OCTOBER 2026 · 4 MIN READ</span>
+        <h3>Flaky, buttery and golden: The beauty of a perfect croissant</h3>
+        <p>
+            Discover the patience, layers and little details
+            that make every croissant a delicious masterpiece.
+        </p>
+         <a href="blog-details.html#article-croissant" class="blog-read-link">Read article</a>
+</a>
+    </div>
+</article>
+
+<!-- ARTICLE 5 -->
+<article class="blog-article-card">
+    <div class="article-image">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
+             alt="Delicious chocolate cake">
+        <span class="article-tag">SWEET MOMENTS</span>
+    </div>
+    <div class="article-content">
+        <span class="article-meta">26 OCTOBER 2026 · 3 MIN READ</span>
+        <h3>A little chocolate can make an ordinary day special</h3>
+        <p>
+            Rich, comforting and full of joy. Explore why
+            chocolate treats always have a special place in our hearts.
+        </p>
+         <a href="blog-details.html#article-chocolate" class="blog-read-link">Read article</a>
+
+    </div>
+</article>
+
+<!-- ARTICLE 6 -->
+<article class="blog-article-card">
+    <div class="article-image">
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800"
+             alt="Homemade chocolate chip cookies">
+        <span class="article-tag">KITCHEN NOTES</span>
+    </div>
+    <div class="article-content">
+        <span class="article-meta">22 OCTOBER 2026 · 5 MIN READ</span>
+        <h3>Cookies, comfort and memories made in the kitchen</h3>
+        <p>
+            Some recipes are more than just ingredients.
+            They're little memories baked with love and shared with everyone.
+        </p>
+         <a href="blog-details.html#article-cookies" class="blog-read-link">Read article</a>
+    </div>
+</article>
+        </div>
+    </section>
+
+
+    <!-- SECTION 4: CUSTOMER REVIEWS -->
+    <section class="blog-reviews">
+
+        <div class="section-heading">
+            <span class="blog-eyebrow">A LITTLE LOVE FROM YOU</span>
+            <h2>Sweet words from <span>our readers.</span></h2>
+            <p>Every kind word makes our kitchen a happier place.</p>
+        </div>
+
+        <div class="blog-reviews-grid">
+
+    <!-- REVIEW 1 -->
+    <div class="blog-review-card">
+        <div class="review-stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+        </div>
+
+        <p class="review-quote">
+            "Absolutely love the warmth and care behind
+            everything here. Every visit feels special,
+            and the treats are simply wonderful!"
+        </p>
+
+        <div class="review-person">
+            <div class="review-avatar">A</div>
+            <div>
+                <h4>Ananya R.</h4>
+                <span>Happy Customer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- REVIEW 2 -->
+    <div class="blog-review-card featured-review">
+        <div class="review-stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+        </div>
+
+        <p class="review-quote">
+            "The croissants are beautifully made, and the
+            attention to detail is amazing. A lovely little
+            bakery I keep coming back to!"
+        </p>
+
+        <div class="review-person">
+            <div class="review-avatar">S</div>
+            <div>
+                <h4>Sneha M.</h4>
+                <span>Happy Customer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- REVIEW 3 -->
+    <div class="blog-review-card">
+        <div class="review-stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+        </div>
+
+        <p class="review-quote">
+            "Such a beautiful experience! The presentation,
+            flavours and overall feel are wonderful.
+            Perfect for every sweet craving."
+        </p>
+
+        <div class="review-person">
+            <div class="review-avatar">R</div>
+            <div>
+                <h4>Riya K.</h4>
+                <span>Happy Customer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- REVIEW 4 -->
+    <div class="blog-review-card">
+        <div class="review-stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+        </div>
+
+        <p class="review-quote">
+            "The aroma of freshly baked bread is simply
+            irresistible! Everything tastes fresh, delicious
+            and made with so much love."
+        </p>
+
+        <div class="review-person">
+            <div class="review-avatar">P</div>
+            <div>
+                <h4>Priya S.</h4>
+                <span>Happy Customer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- REVIEW 5 -->
+    <div class="blog-review-card">
+        <div class="review-stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+        </div>
+
+        <p class="review-quote">
+            "Ordered a cake for a special occasion and it
+            was absolutely perfect. Beautifully presented
+            and every bite was delicious!"
+        </p>
+
+        <div class="review-person">
+            <div class="review-avatar">M</div>
+            <div>
+                <h4>Meera N.</h4>
+                <span>Happy Customer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- REVIEW 6 -->
+    <div class="blog-review-card">
+        <div class="review-stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/></svg>
+        </div>
+
+        <p class="review-quote">
+            "A perfect spot for anyone who loves good
+            bakery treats. The cookies are my favourite,
+            and I always leave with a smile!"
+        </p>
+
+        <div class="review-person">
+            <div class="review-avatar">K</div>
+            <div>
+                <h4>Kavya D.</h4>
+                <span>Happy Customer</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+        </div>
+    </section>
+
+</main>
+
+
+<!-- TEMPORARY ARTICLE POPUP -->
+<div class="blog-modal" id="blogModal">
+    <div class="blog-modal-content">
+        <button class="blog-modal-close" id="blogModalClose"
+                aria-label="Close">&times;</button>
+        <span class="blog-eyebrow">A LITTLE PREVIEW</span>
+        <h2 id="randomArticleHeadline">A little sweetness goes a long way.</h2>
+        <p>
+            Our full story is coming soon. Stay tuned for more
+            delicious reads from the Buttercup kitchen!
+        </p>
+        <button class="blog-primary-btn" id="blogModalOkay">
+            Sounds lovely
+        </button>
+    </div>
+</div>
+
+
+    </main>
+    <!-- BLOG CTA SECTION -->
+<section class="blog-cta-section">
+
+    <div class="blog-cta-content">
+
+        <div class="blog-cta-text">
+
+            <span class="blog-cta-eyebrow">
+                A LITTLE SOMETHING TO CELEBRATE
+            </span>
+
+            <h2>
+                Let's make something <span>sweet.</span>
+            </h2>
+
+            <p>
+                Have a sweet craving or a story to share?
+                We'd love to hear from you.
+            </p>
+
+        </div>
+
+        <div class="blog-cta-action">
+            <a href="contact.html#contact-form" class="blog-cta-primary">
+                Get in Touch
+                
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+    
+
+    <!--FOOTER-->
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="brand-logo"
+               src="../assets/images/logo/logoo.jpg"
+               alt="">
+          <span class="brand-name">
+            Buttercup
+            <small>BAKEHOUSE</small>
+          </span>
+        </a>
+
+        <p class="footer-tagline">
+          Baked with love, always
+          <svg class="footer-heart" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+          </svg>
+        </p>
+
+        <p class="footer-description">
+          Little moments, made sweeter. Thoughtful bakes,
+          honest ingredients and a warm welcome every day.
+        </p>
+
+        <div class="footer-socials">
+
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1Z"/>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle class="social-dot" cx="17.5" cy="6.8" r="1"/>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 8.2a2.8 2.8 0 0 0-2-2C17.2 5.7 12 5.7 12 5.7s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.7 12a29 29 0 0 0 .3 3.8 2.8 2.8 0 0 0 2 2c1.8.5 7 .5 7 .5s5.2 0 7-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .3-3.8 29 29 0 0 0-.3-3.8Z"/>
+              <path class="social-play" d="m10 9 5 3-5 3Z"/>
+            </svg>
+          </a>
+
+          <a href="mailto:hello@buttercupbakehouse.example" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m4 7 8 6 8-6"/>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 4h4l10 16h-4L5 4Zm0 16L19 4M5 4l14 16"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="products.html">Shop All Bakes</a>
+        <a href="blog.html">The Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- From the Oven -->
+      <div class="footer-col">
+        <h4>From the Oven</h4>
+        <a href="products.html?category=cakes">Celebration Cakes</a>
+        <a href="products.html?category=pastries">Pastries</a>
+        <a href="products.html?category=breads">Fresh Breads</a>
+        <a href="custom-orders.html">Custom Orders</a>
+        <a href="products.html">Seasonal Treats</a>
+      </div>
+
+      <!-- Come Say Hello -->
+      <div class="footer-col footer-visit">
+        <h4>Come Say Hello</h4>
+
+        <a class="visit-item"
+           href="https://www.google.com/maps/search/?api=1&query=bakeries+Bengaluru"
+           target="_blank" rel="noopener">
+          <span class="visit-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </span>
+          <span>
+            <b>Find Our Bakery</b>
+            <small>Bengaluru, Karnataka</small>
+          </span>
+        </a>
+
+        <div class="visit-item">
+          <span class="visit-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+          </span>
+          <span>
+            <b>Bakery Hours</b>
+            <small>Tuesday – Sunday · 8 AM – 7 PM</small>
+          </span>
+        </div>
+
+        <a class="visit-item"
+           href="mailto:hello@buttercupbakehouse.example">
+          <span class="visit-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m4 7 8 6 8-6"/>
+            </svg>
+          </span>
+          <span>
+            <b>Drop Us a Note</b>
+            <small>hello@buttercupbakehouse.example</small>
+          </span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>
+        © <span id="year"></span> Buttercup Bakehouse. All rights reserved.
+      </span>
+
+      <span class="footer-legal">
+        <a href="404.html">Privacy Policy</a>
+        <i>|</i>
+        <a href="404.html">Terms &amp; Conditions</a>
+      </span>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>
